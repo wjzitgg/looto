@@ -1,0 +1,43 @@
+/*
+* layout
+*/
+@charset "UTF-8";
+@import "mixins";
+@import "variables";
+
+.page-wrap{
+  min-height: 100vh;
+  background: #fff;
+//margin-top: 0.9rem;
+}
+//.page-content { 
+//  min-width: 1200px; 
+//  width: expression((documentElement.clientWidth > 1140) ? "1140px" : "auto" ); 
+//}
+// 谷歌滚动条
+::-webkit-scrollbar {
+width: 8px;
+background: #ddd;
+display: none;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 8px;
+background: rgba(0, 0, 0, .5);
+}
+
+// IE滚动条
+
+body {
+  font-family: 'SFPro';  //微软雅黑
+  /*滚动条滑块按钮的颜色*/
+  scrollbar-face-color: #22293a;
+  /*三角箭头的颜色*/
+  scrollbar-arrow-color: #22293a;
+  /*滚动条整体颜色*/
+  scrollbar-highlight-color: #f8f8f8;
+  /*滚动条轨道颜色*/
+  scrollbar-track-color: #666;
+  /*滚动条阴影*/
+  scrollbar-shadow-color: #ccc;
+}

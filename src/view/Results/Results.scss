@@ -1,0 +1,852 @@
+    .results-wrap {
+        background: #F6F4FB;
+        min-height: 100vh;
+        .gray {
+            color: gray!important;
+        }
+         //下拉刷新
+        .doge {
+            width: 0.6rem;
+            border-radius: 50%;
+        }
+     
+        
+        .results-banner {
+            margin: 0 0 0.2rem 0;
+            img {
+                width: 100%;
+                max-height: 2.8rem;
+            }
+        }
+        
+        //广播
+//      .van-notice-bar {
+//          width: 92%;
+//          margin: 0 4% 0.2rem 4%;
+//          border-radius: 0.6rem;
+//          padding: 0 0.1rem;
+//          font-size: 0.26rem;
+//          height: 0.7rem;
+////           animation:opacityA 0.8s  alternate;
+//           
+//           @keyframes opacityA{
+//              0% {
+//                 transform: translateY(-50%);
+//                 opacity: 0;
+//              }
+//              50%{
+//        
+//              }
+//              100%{
+//                  opacity: 1;
+//                   transform: translateY(0);
+//              }
+//          }
+//          img {
+//              width: 0.6rem!important;
+//              margin-right: 0.2rem;
+//          }
+//          .notice-swipe {
+//              height: 0.7rem;
+//          }
+//      }
+//      //广播
+        
+        
+        
+        .results-new-list {
+            display: flex;
+            align-items: center;
+            padding: 0.1rem 0.3rem 0.2rem 0.3rem;
+            background: #F6F4FB;
+            span {
+                color: #C51D24;
+                font-size: 0.34rem;
+                font-weight: 600;
+            }
+            .new-list-right {
+                flex: 1;
+                text-align: right;
+                img {
+                    width: 0.44rem;
+                }
+            }
+
+        }
+        .fixActive {
+            position: fixed;
+            width: 100%;
+            top: 1.2rem;
+        }
+
+        //开奖历史列表
+        .results-list {
+            padding: 0 0.26rem 0.5rem 0.26rem;
+            .list-block {
+               background: #fff; 
+               box-shadow:0px 0px 5px 0px rgba(0,0,0,0.07);
+               border-radius:0.2rem;
+               padding: 0.24rem 0.24rem;
+               margin-bottom: 0.22rem;
+                .list-title {
+                    display: flex;
+//                  align-items: center;
+                    .title-left {
+                        div:nth-of-type(1) {
+                            color: #4E575C;
+                            font-size: 0.34rem;
+                        }
+                        div:nth-of-type(2) {
+                            font-size: 0.22rem;
+                            margin-top: 0.05rem;
+                            span:nth-of-type(1) {
+                                color: #C51D24;
+                            }
+                            span:nth-of-type(2) {
+                                color: #C1BCBC;
+                            }
+                            span:nth-of-type(3) {
+                                color: #C51D24;
+                            }
+                        }
+                        .bse-type {
+                            span {
+//                              text-decoration: underline;
+//                              color: #2344F8!important;
+                                font-size: 0.25rem;
+                                color: #a0a0a0!important;
+                            }
+                        }
+                    }
+                    .title-right {
+                        flex: 1;
+                        text-align: right;
+                        font-size: 0.22rem;
+                        color: #939695;
+                        font-family:Roboto-Regular,Roboto;
+                        div:nth-of-type(2) {
+                            .iconfont {
+                                font-size: 26px;
+                                color: #c7c4c4;
+                            }
+                        }
+                    }
+                }
+                .lottery-num {
+                    display: flex;
+                    margin: 0.16rem 0;
+                    div {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                        span {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 0.78rem;
+                            height: 0.78rem;
+                            border-radius: 100%;
+                            color: #707070;
+                            font-size: 0.36rem;
+    //                      margin-right: 0.15rem;
+                            border:1px solid rgba(205,204,202,1);
+                        }
+                    }
+
+                    div:nth-of-type(2) {
+                        span {
+                            color: #3EA63E;
+                        }
+                    } 
+
+                    .lottery-num-bse {
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        span {
+                            margin-right: 0.2rem;
+                        }
+                        span:nth-of-type(4) {
+                            color: #3EA63E;
+                        }
+                        b:nth-of-type(1) {
+                            margin-top: 0.15rem;
+                            margin-right: 0.04rem;
+                            font-size: 0.4rem;
+                            font-weight: normal;
+                        }
+                        b:nth-of-type(2) {
+                            margin: 0 0.2rem 0 0;
+                            font-size: 0.5rem;
+                            font-weight: normal;
+                        }
+                    }
+                }
+                .noTimer:nth-of-type(2) {
+                    span {
+                        color: gray!important;
+                    }
+                }
+                .list-center {
+                    display: flex;
+                    align-items: center;
+                    margin: 0.3rem 0 0.2rem 0;
+                    div:nth-of-type(1) {
+                        color: #0486F3;
+                        font-size: 0.26rem;
+                    }
+                    div:nth-of-type(2) {
+                        flex: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-content: center;
+                        color:#CCC9CD;
+                        font-size: 0.26rem;
+                        .iconfont {
+                            margin-left: 0.05rem;
+                            transition: all 0.2s;
+                        }
+                    }
+                }
+                
+                .list-bottom {
+//                  background: #6173D5;
+                    border-radius: 3px;
+                    padding: 0.25rem 0 0.1rem 0;
+                    margin-top: 0.4rem;
+                    display: flex;
+                    align-items: center;
+                    font-family:Roboto-Condensed,Roboto;
+                    border-top: 1px dotted #EBEBEB;
+                    .bottom-left {
+                       
+                        flex: 3;
+                        padding-right: 0.2rem;
+                        p:nth-of-type(1) {
+                            font-size: 0.14rem;
+                            color: #827F7F;
+                             text-align: center;
+                        }
+                        p:nth-of-type(2) {
+                            font-size: 0.28rem;
+                            color:#FD000B;
+                            text-align: center;
+                        }
+                    }
+                    .bottom-center {
+                        flex: 5;
+                        text-align: center;
+                        border-left: 1px dotted #EBEBEB;
+                         border-right: 1px dotted #EBEBEB;
+                        p:nth-of-type(1) {
+                            display: flex;
+                            align-items: center;
+                             font-size: 0.17rem;
+                             color: #827F7F;
+                            justify-content: center;
+                            margin-bottom: 0.04rem;
+                        }
+                        p:nth-of-type(2) {
+                            font-size: 0.32rem;
+                            display: flex;
+                            align-items: center;
+                            margin: 0 10%;
+                            b {
+                                font-weight: normal;
+           
+                            }
+                            span {
+                                flex: 1;
+                                text-align: center;
+                                color:#7F7879;
+                            }
+                        }
+                        
+                    }
+                    .no-time {
+                        font-size: 0.24rem!important;
+                        color: #999;
+                    }
+                    .bottom-right {
+                        flex: 3;
+                        text-align: right;
+                        .right-block {
+                            display: inline-block;
+                            div:nth-of-type(1) {
+                                color: #fff;
+                                background: #FD000B;
+                                text-align: center;
+                                font-size: 0.18rem;
+                                padding: 0 0.17rem;
+                                line-height: 0.32rem;
+                                border-top-left-radius: 4px;
+                                border-top-right-radius: 4px;
+                            }
+                            div:nth-of-type(2) {
+                                font-size: 0.22rem;
+                                color:#FD000B;
+                                text-align: center;
+                                padding: 0.03rem 0;
+                                border: 1px solid #A0A0A0;
+                                border-top: 0;
+                                border-bottom-left-radius: 4px;
+                                border-bottom-right-radius: 4px;
+                                background: #fff;
+                            }
+                        }
+                        .no-buy {
+                            div:nth-of-type(1) {
+                                background: gray!important;
+                            }
+                            div:nth-of-type(2) {
+                                color: gray;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+           
+        }
+        //开奖历史列表
+        
+        .active-action {
+            color: green;
+        }
+        
+        
+        //开奖详情
+        .lottery-detail-popup {
+            width: 100%!important;
+            top: 1.1rem;
+        }
+//      .van-overlay {
+//          top: 0.9rem;
+//      }
+        .lottery-detail {
+            background: #fff;
+            width: 100%;
+            padding: 0.6rem 0.2rem;
+            
+            .iconguanbi {
+                position: absolute;
+                top: 0.05rem;
+                right: 0.05rem;
+                color: #B4B2B2;
+                font-size: 0.5rem;
+                padding: 0.2rem;
+            }
+            .lottery-detail-title {
+                text-align: center;
+                p:nth-of-type(1) {
+                    color: #696969;
+                    font-size: 0.4rem;
+                }
+                p:nth-of-type(2) {
+                    font-size: 0.22rem;
+                    margin: 0 0 0.1rem 0;
+                    span:nth-of-type(1) {
+                        color: #C1BCBC;
+                    }
+                    span:nth-of-type(2) {
+                        color: #D0021B;
+                    }
+                }
+                p:nth-of-type(3) {
+                    color: #898989;
+                    font-size: 0.26rem;
+                }
+            }
+            .lottery-detail-first {
+                background:rgba(208,2,27,1);
+                box-shadow:0px 0px 5px 0px rgba(0,0,0,0.07);
+                border-radius:0.1rem;
+                padding: 0.1rem 0.2rem;
+                margin: 0.15rem 0 0.25rem 0;
+                position: relative;
+                .odd-even-text {
+                    position: absolute;
+                    right: 0.3rem;
+                    top: 0.5rem;
+                    color: #F8E71C;
+                }
+                .first-wrap {
+                    display: flex;
+                    margin: 0.16rem 0;
+                    div {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 0.78rem;
+                        height: 0.78rem;
+                        border-radius: 100%;
+                        color: #707070;
+                        font-size: 0.36rem;
+                        background: #fff;
+                        border:1px solid rgba(205,204,202,1);
+                    }
+                    div:nth-of-type(2) {
+                        span {
+                          color: #3EA63E;  
+                        } 
+                    }
+                }
+                .lottery-num-bse {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    margin: .16rem 0;
+                    span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 0.78rem;
+                        height: 0.78rem;
+                        border-radius: 100%;
+                        color: #707070;
+                        font-size: 0.36rem;
+//                      margin-right: 0.15rem;
+                        border:1px solid rgba(205,204,202,1);
+                        background: #fff;
+                         margin-right: 0.2rem;
+                    }
+                    span:nth-of-type(1) {
+                       
+                    }
+                    span:nth-of-type(4) {
+                        color: #3EA63E;
+                    }
+                    b:nth-of-type(1) {
+                        margin-top: 0.15rem;
+                        margin-right: 0.04rem;
+                        font-size: 0.4rem;
+                        color: #fff;
+                    }
+                    b:nth-of-type(2) {
+                        margin: 0 0.2rem 0 0;
+                        font-size: 0.5rem;
+                        color: #fff;
+                        font-weight: normal;
+                    }
+                }
+                .first-center {
+                    display: flex;
+                    align-items: center;
+                    margin: 0.3rem 0 0.2rem 0;
+                    div:nth-of-type(1) {
+                        color: #F8E71C;
+                        font-size: 0.26rem;
+                    }
+                    div:nth-of-type(2) {
+                        flex: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-content: center;
+                        color:#fff;
+                        font-size: 0.26rem;
+                        .iconfont {
+                            margin-left: 0.05rem;
+                            transition: all 0.2s;
+                        }
+                    }
+                }
+                .first-bottom {
+                    font-size: 0.26rem;
+                    color: #fff;
+                    padding: 0.1rem 0;
+                    p {
+                        padding: 0.05rem 0;
+                    }
+                    .amount {
+                        color: #F8E71C;
+                    }
+                }
+            }
+            
+            
+            .lottery-list {
+                max-height: 6rem;
+                overflow: auto;
+                .amount {
+                    color: #D0021B;
+                }
+                .lottery-Consolation {
+                    border-bottom: 1px dashed #EDEAED;
+                    margin: 0.3rem 0;
+                    .list-block-title {
+                        font-size: 0.26rem;
+                        color: #696969;
+                        margin: 0 0.2rem;   
+                    }
+                    .Consolation-list {
+                        display: flex;
+                        justify-content: center;
+                        margin: 0.3rem 0;
+  
+                        span {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 0.78rem;
+                            height: 0.78rem;
+                            border-radius: 100%;
+                            color: #707070;
+                            font-size: 0.36rem;
+                            margin-right: 0.15rem;
+                            background: #fff;
+                            border:1px solid rgba(205,204,202,1);
+                        }
+                    }
+                }
+                .no-border {
+                    border-bottom: 0;
+                }
+                
+                .lottery-price-list {
+                   border-bottom: 1px dashed #EDEAED;
+                   margin: 0.3rem 0;
+                    .list-block-title {
+                        font-size: 0.26rem;
+                        color: #696969;
+                        margin: 0 0.2rem;                    }
+                    .price-list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 0.3rem 0;
+  
+                        span {
+                            flex: 0 0 20%;
+                            text-align: center;
+
+                            color: #B7B7B7;
+                            font-size: 0.3rem;
+                            margin-bottom: 0.25rem;
+
+                        }
+                    } 
+                }
+            }
+            
+            
+            //指数
+            .bse-wrap {
+                padding: 0.15rem 0.2rem;
+                margin-bottom: 4rem;
+                .bse-title {
+                    margin-bottom: 0.17rem;
+                    display: flex;
+                    align-items: center;
+                    span:nth-of-type(1) {
+                        color: #2344F8;
+//                      text-decoration: underline;
+                        font-size: 0.26rem;     
+                    }
+                    span:nth-of-type(2) {
+                        flex: 1;
+                        text-align: right;
+                        color: #999;
+                        font-size: 0.26rem;
+                    }
+                }
+                .current-bse {
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.26rem;
+                    color: #999;
+                    b {
+                        color: #333;
+                    }
+                    div:nth-of-type(1) {
+                        font-weight: bold;
+                        color: #333;
+                       span {
+                            margin-left: 0.2rem;
+                            font-weight: normal;
+                        }
+                    }
+                    div:nth-of-type(2) {
+                        flex: 1;
+                        text-align: right;
+                    }
+                }
+                .current-bse-btc {
+                    .usd {
+                        border-bottom: 1px solid #2344F8;
+                        color: #2344F8;
+                        font-size: 0.26rem;
+                    }
+                    p {
+                        font-size: 0.26rem;
+                    }
+                    p:nth-of-type(1) {
+                        margin: 0.1rem 0 0.1rem 0;
+                    }
+                }
+                //指数上升
+                .rise {
+                    color: #08F150!important;
+                    .iconfont {
+                        color: #08F150;
+                        font-size: 0.28rem;
+                    }
+                }
+                //指数下降
+                .decline {
+                    color: #F72316!important;
+                    .iconfont {
+                        color: #F72316;
+                        font-size: 0.28rem;
+                    }
+                }
+                .day-bse {
+                    margin: 0.15rem 0;
+                    div {
+                        display: flex;
+                        margin-bottom: 0.17rem;
+                        font-size: 0.26rem;
+                        color: #999;
+                        b {
+                            color: #333;
+                        }
+                        span:nth-of-type(2) {
+                            flex: 1;
+                            text-align: right;
+                        }
+                    }
+                  
+                }
+ 
+            }
+            
+            
+            
+            
+            //按钮
+            .lottery-detail-btn {
+                display: flex;
+                margin: 0.3rem 0.2rem 0.5rem 0.2rem;
+                .detail-btn {
+                    flex: 1;
+                    text-align: center;
+                    height: 0.8rem;
+                    line-height: 0.8rem;
+                    background: #D0021B;
+                    color: #fff;
+                    font-size: 0.26rem;
+                    border-radius: 4px;
+                }
+                .detail-btn:nth-of-type(1) {
+                    margin-right: 0.3rem;
+                }
+                .detail-btn:nth-of-type(2) {
+                    background: #49B345;
+                }
+            }
+        }
+        
+        
+        //开奖详情
+        
+        
+        .show-swipeImg {
+            position: fixed;
+            top: 15%;
+            width: 90%;
+            left: 5%;
+            transition: all 0.3s;
+            z-index: 9999999999;
+            text-align: center;
+            .iconguanbi1 {
+                font-size: 0.6rem;
+                color: #fff;
+            }
+            img {
+                width: 100%;
+                margin-bottom: 0.4rem;
+                border-radius: 0.1rem;
+            }
+        }
+        
+        
+        //新手引导
+        //比特币汇率购彩引导
+        .guide-0 {
+            top: 30%;
+            p {
+                height: 1.5rem;
+            }
+            .guide-people {
+                right: 2%;
+                top: -66%!important;
+            } 
+        }
+        .guide-1 {
+            top: 2.8rem;
+            p {
+               height: 1.5rem;
+            }
+            .iconxiangxia {
+                right: 8%;
+                bottom: -25%;
+            }
+                
+        }
+        
+        
+        
+        //绑定手机号引导
+        .guide-2 {
+            top: 30%;
+            p {
+               height: 2rem;
+            }
+            .iconxiangxia {
+                right: 8%;
+                bottom: -25%;
+            }
+            .guide-people {
+                right: 2%;
+                top: -57%;
+            }     
+        }
+        
+        
+        .guide-3 {
+            top: 1.5rem;
+            p {
+               height: 0.5rem;
+            }
+            .iconxiangshang {
+                left: 8%;
+                top: -25%;
+            }    
+        }
+        
+        
+        //充值引导
+        .guide-4 {
+            top: 30%;
+            p {
+                height: 1rem;
+            }   
+            .guide-people {
+                right: 2%;
+                top: -82%;
+            }  
+        }
+        
+        .guide-5 {
+            top: 1.5rem;
+            p {
+               height: 0.5rem;
+            }
+            .iconxiangshang {
+                right: 1%;
+                top: -25%;
+            }  
+        }
+        
+        
+        //推广员系统引导
+        .guide-6 {
+            top: 30%;
+            p {
+                height: 2.5rem;
+            }  
+             .guide-people {
+                right: 2%;
+                top: -52%;
+            }   
+        }
+        
+        .guide-7 {
+            top: 1.5rem;
+            p {
+               height: 0.5rem;
+            }
+            .iconxiangshang {
+                left: 6%;
+                top: -25%;
+            }
+              
+        }
+        
+        
+        //代理咨询引导
+        .guide-8 {
+            top: 30%;
+            p {
+                height: 2rem;
+            }   
+            .guide-people {
+                right: 2%;
+                top: -59%;
+            }  
+        }
+        
+        .guide-9 {
+            top: 1.5rem;
+            p {
+               height: 0.5rem;
+            }
+            .iconxiangshang {
+                left: 6%;
+                top: -25%;
+            }
+   
+        }
+        
+        
+        .guideActive {
+            z-index: 9999999;
+            color: #fff!important;
+        }
+        
+        
+        
+
+    }
+ 
+
+
+
+
+//进度条加载
+.loading-wrap {
+    background: url('../../assets/images/loading_bg.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .loading-logo {
+        text-align: center;
+        padding: 2rem 0 3rem 0; 
+        img {
+            width: 35%;
+        }
+    }
+    .loading-progress {
+        margin: 0 0.6rem;
+        .progress-block {
+            border-radius:8px;
+            border:1px solid rgba(247,247,247,1);
+            padding: 0.07rem 0.1rem;
+        }
+        .progress-text {
+            margin: 0.3rem 0.1rem;
+            span:nth-of-type(1) {
+                color: #FFFFFF;
+            }
+            span:nth-of-type(2) {
+                color: #ef3939;
+                font-weight: 600;
+            }
+        }
+    }
+}

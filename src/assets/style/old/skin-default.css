@@ -1,0 +1,81 @@
+body{background-color:#efefef;}
+
+.header{color:#fff;background:#ff7329 -webkit-linear-gradient( 90deg, rgb(255,130,69) 0%, rgb(255,163,77) 100%);}
+.header .iconfont,.header a{color:#fff;}
+.nav{background: #fff; border-top-color: #D5D5D5;}
+.nav .item a{color: #666;}
+.nav .item.active a { color: #ff7329; }
+
+/*FORM*/
+.form-input-group{background: #fff;border-color: #fff;box-shadow: 0 0 8px rgba(0,0,0,.1)}
+.form-input-group input:-webkit-autofill {  -webkit-box-shadow: 0 0 0px 1000px white inset;  }
+.form-input-group i{color:#b8b0a7;}
+.button {background-image: -webkit-linear-gradient( 90deg, rgb(255,130,69) 0%, rgb(255,176,80) 100%); color:#fff;}
+
+.dt-list{background: #fff;color:#747e8a;}
+.dt-list .dt-title{border-color:#f0f0f0;background: f9f9f9;}
+.dt-list .dt-title .iconfont{color:#ff7329;}
+.dt-table-list thead,.dt-table-list tbody tr{border-bottom-color:#f0f0f0;}
+
+
+/*TAB*/
+.wjk-tab .bottom-line{background: #ff6d20;}
+.tab-item-wrap{background: #fff;border-color:#e0e0e0;}
+.wjk-tab .tab-item{color:#999;}
+.wjk-tab .tab-item.active{color:#ff6d20;}
+
+.btn-group .group-item{background-color:#fff;border-color: #e0e0e0;color: #999;}
+.btn-group .group-item:last-child{border-color: #e0e0e0;}
+.btn-group .group-item.active{background-color: #ff6d20 ;color:#fff; }
+
+.number-input>div{border-color:#e0e0e0;}
+
+.form-list{border-color:#e0e0e0;background: #fcfcfc;}
+.form-list .item{border-color: #e0e0e0;}
+.form-list .name{color:#333;}
+.form-list .value{color:#999;}
+.form-list .item-block .name{color:#ee8a29;}
+.form-list .item-block .value{color:#333;}
+
+/*PAGE*/
+/*page login*/
+.page-login{background-color:#fff3ea;}
+.page-login .bottom-link{color:#a66c27;}
+
+/*page index*/
+.page-index .banner{background:#fe7f3f url(../../images/header-banner/index.png); }
+
+/*page game*/
+.page-game .header-banner{color:#fff;background:#fe7f3f url(../../images/header-banner/game.png);}
+.page-game .header-banner .link{color:#fff;border-color:#fff;}
+.page-game .activity-info{background: #fff;color:#999;}
+.page-game .activity-info .iconfont{color:#ffbe71;}
+.page-game .com-box{background: #fff;box-shadow: 0 0 10px rgba(204,204,204,.2)}
+.page-game .com-box .title{color:#fff;background-image: -webkit-linear-gradient( 90deg, rgb(255,130,69) 0%, rgb(255,176,80) 100%);}
+.page-game .my-game-list .game-icon{background: #f0f0f0;color:#fff;}
+.page-game .game-icon.game-1{background-image: -webkit-linear-gradient( 90deg, rgb(245,137,175) 0%, rgb(255,175,80) 100%);box-shadow: 0px 3px 9px 0px rgba(232, 127, 147, 0.75);}
+.page-game .game-icon.game-161226093203624829{background-image: -webkit-linear-gradient( 90deg, rgb(162,197,255) 0%, rgb(169,143,253) 100%);box-shadow: 0px 3px 9px 0px rgba(166, 185, 255, 0.75);}
+.page-game .game-icon.game-2{background-image: -webkit-linear-gradient( 90deg, rgb(251,145,182) 0%, rgb(201,102,252) 100%);box-shadow: 0px 3px 9px 0px rgba(243, 151, 176, 0.75);}
+.page-game .game-icon.game-3{background-image: -webkit-linear-gradient( 90deg, rgb(119,186,255) 0%, rgb(143,253,252) 100%);box-shadow: 0px 3px 9px 0px rgba(148, 182, 255, 0.75);}
+
+
+/*commodityList*/
+.page-commodityList .name{color:#666;}
+.page-commodityList .btn-start{background: #fe7f3f;color:#fff;}
+
+/*commodityDetail*/
+.quotation-borad{background: #fff;}
+.quotation-borad .line1{color:#f35833;}
+.quotation-borad .line2{border-color:#e5e5e5;}
+.quotation-borad .line2 .item{border-color:#e5e5e5;}
+.quotation-borad .line2 .name{color:#777;}
+.quotation-borad .line2 .value{color:#333;}
+.quotation-borad .line3 .l{color:#929292;}
+.quotation-borad .line3 .r{color:#363636;}
+
+.chart-borad,.buy-btns{background: #fff;}
+.buy-btns .btn-fall{background: #4dc43d;color:#fff;}
+.buy-btns .btn-rise{background: #ff6d20;color:#fff;}
+
+
+

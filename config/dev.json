@@ -1,0 +1,38 @@
+{
+  "project": "FantasyLand",
+  "localDevServer": {
+    "host": "127.0.0.1",
+    "port": "8080",
+    "defaultPage": "./index.html"
+  },
+  "remoteDevServer": {
+    "dev": {
+      "protocol": "http",
+      "host": "47.106.171.66:19108",
+      "port": "19108",
+      "pathname": "/frontWeb"
+    },
+    "test": {
+      "protocol": "http",
+      "host": "47.106.171.66:19108",
+      "port": "19108",
+      "pathname": "/frontWeb"
+    }
+  },
+  "sftp": {
+    "dev": {
+      "host": "112.74.45.120",
+      "port": "22021",
+      "user": "root",
+      "pass": "j1qbGfi{ciptA?.lc{3g2lFM}O76nfpf",
+      "remotePath": "/data/apprun/yyouyu/front_apache-tomcat-7.0.72/webapps/frontWeb/app"
+    },
+    "test":{
+      "host":     "47.106.171.66",
+      "port":     "22073",
+      "user":     "apprun",
+      "pass":     "oK&k11jiZ",
+      "remotePath":"/data/apprun/yyouyu/front_apache-tomcat-7.0.72/webapps/frontWeb/app"
+    }
+  }
+}

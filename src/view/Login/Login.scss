@@ -1,0 +1,267 @@
+//登录
+.colr {
+    color: #373131;
+    font-size: .28rem;
+}
+.hue {
+    color: #D0001C;
+}
+.van-field__body {
+   font-size: .32rem;
+}
+.login-wrap {
+    .logo-img {
+        text-align: center;
+        margin: .1rem 0 0.64rem 0;
+        img {
+            width: 40%;
+        }
+        p {
+            font-size: 0.6rem;
+            color: #6D7278;
+        }
+    }
+    .login-tips {
+        display: flex;
+        font-size: 0.26rem;
+        margin: 0.2rem 0 1.3rem;
+        div:nth-of-type(1) {
+            span:nth-of-type(1) {
+                color: #D0001C;
+            }
+            span:nth-of-type(2) {
+                color: #D0001C;
+                
+            }
+        }
+        div:nth-of-type(2) {
+            flex: 1;
+            text-align: right;
+            color: #2F2F2F;
+            span {
+                color: #D0001C;
+            }
+        }
+    }
+    
+    .van-password-input {
+//      position: absolute;
+//      width: 90%;
+//      top: 25%;
+//      left: 5%;
+//      margin: 0;
+        z-index: 1111111111;
+        margin: 0.3rem 0.4rem 0.5rem 0.4rem;
+        .van-password-input__security li {
+            border-radius: 4px;
+            border: 1px solid #333;
+        }
+    }
+    .van-password-input__info {
+        color: #fff;
+    }
+    .van-number-keyboard {
+        z-index: 1111111111;
+    }
+  
+  
+  
+    .langusge-list {
+        margin: 0.3rem 0.48rem 0;
+        font-weight: 600;
+        span {
+            margin-right: 0.7rem;
+            line-height: 0.64rem;
+            display: inline-block;
+        }
+        .active-en {
+            border-bottom: 2px solid #F10000;
+            color: #F10000;
+            
+        }
+    }
+}
+
+.van-icon__image {
+    width: .5rem !important;
+    height: .34rem !important;
+}
+//注册
+.register-wrap {
+    .register-left {
+        padding: 0 0.2  rem;
+        margin-top: 0.3rem;
+        img {
+            width: 0.96rem;
+        }
+    }
+    .register-title {
+        padding: 0.8rem 0.4rem;
+        p:nth-of-type(1) {
+            font-size: 0.48rem;
+            color:#6D7278;
+        }
+        p:nth-of-type(2) {
+            font-size: 0.32rem;
+            color: #8C8C8C;
+            margin-top: .12rem;
+        }
+    }
+    // 发送按钮
+    .van-field__button {
+        position: absolute;
+        right: 0;
+        top: -.2rem;
+        width: 1.7rem;
+        height: .8rem;
+        padding: 0;
+        // border-radius: .15rem;
+        .van-button--normal {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .register-btn {
+        margin: 0rem 0.64rem;       
+        .van-button--normal {        
+            font-size: 0.34rem;
+            height: 0.9rem;
+            font-weight: bold;
+            border-radius: .1rem;
+            // margin-top: .8rem;
+        }
+        .disabled-btn {
+            color: #949494!important;
+        }
+        .tips {
+            margin: 0.4rem 0;
+            .van-checkbox__label {
+                font-size: 0.26rem;
+                color: #8C8C8C; 
+            }
+           
+        }
+    }
+    
+    //其他登录
+    .other-login {
+        text-align: center;
+        margin-top: .8rem;
+        .other-title {
+            color: #7C7C7C;
+            font-size: 0.29rem;
+            margin-bottom: 0.3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                width: 1.2rem;
+                height: 1px;
+                background: #D8D8D8;
+            }
+            .line-rt {
+                margin-left: .6rem;
+            }
+            .line-lf {
+                margin-right: .6rem;
+            }
+        }
+        .other-btn {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 1.2rem;
+            .login-btn {
+                img {
+                    width: .8rem;
+                    height: .8rem;
+                }
+            }
+            .google-signin-button {
+                background: inherit;
+            }
+        }
+    }
+    
+}
+
+.van-cell-group {
+    padding: 0 0.6rem;
+    .van-cell {
+        padding: 0.2rem 0;
+        border-bottom: 1px solid #DCDCDC;
+        margin-bottom: 0.4rem;
+        input::-webkit-input-placeholder {
+            color: #747474;
+        }
+    }
+    // .van-cell:nth-child(4) {
+    //     margin-bottom: 0;
+    // }
+    
+    
+    .van-field__error-message {
+//      color: #A39F9F;
+        font-size: 0.2rem;
+    }
+}
+.van-hairline--top-bottom::after, .van-hairline-unset--top-bottom::after, {
+    border-width:0!important;
+}
+
+
+
+//修改密码
+.editPassword-wrap {
+    background: #F8F6F9;
+     min-height: 100vh;
+     .van-field__control {
+         padding: 0.12rem 0.2rem;
+     }
+     input::-webkit-input-placeholder {
+        color: #D4D5D4;
+    }
+    .header-right {
+        display: inline-block!important;
+    }
+}
+// 忘记密码成功
+.wrap-mask {
+    position: fixed;
+    top: 2.6rem;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center; 
+    .mask-succe {
+        width: 1.08rem;
+    }
+    .has-succeed{
+        font-size: .48rem;
+        margin-top: .4rem;
+        font-weight: 600;
+    }
+}
+.lk-confirm {
+    width: 6.7rem;
+    height: 1.28rem;
+    line-height: 1.28rem;
+    text-align: center;
+    border-radius: .1rem;
+    font-size: .36rem;
+    background-color: #E40001;
+    color: #fff;
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    margin-left: -3.35rem;
+}
+// 修改
+.editinfo {
+   text-align: center;
+   margin-top: .2rem;
+    .van-uploader__upload {
+        border: 1px solid #cda4a4;
+        border-radius: 50%;
+        margin-left: .2rem;
+    }
+}
+

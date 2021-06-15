@@ -1,0 +1,30 @@
+
+.vue-dialog{
+  position: fixed;left:0;right:0;top:0;bottom:0;background: rgba(0,0,0,.5);z-index:9999;
+  .dialog-panel{position: absolute;  top:50%;left:50%;transform:translate(-50%,-50%);}
+  .dialog-outer{position: relative; background:#a86f18;overflow: auto;box-shadow: 0 0 0.2rem rgba(0,0,0,.7); border-radius:0.4rem;width:6.6rem;}
+  .dialog-outer:after{position: absolute;top:0.26rem;left:0.26rem; width:0.53rem;height:0.5rem;content:' ';background: url(./assets/images/dialog-tl.png);background-size: cover;}
+  .dialog-outer:before{position: absolute;top:0.26rem;right:0.26rem;width:0.53rem;height:0.5rem;content:' ';background: url(./assets/images/dialog-tr.png);background-size: cover;}
+  .dialog-inner{margin:0.1rem;background:#f8eac7;border-radius:0.3rem;box-shadow:0 0.02rem rgba(0,0,0,.4),inset 0 0 0.02rem rgba(0,0,0,.7); }
+  .dialog-inner:after{position: absolute;bottom:0.26rem;left:0.26rem; width:0.53rem;height:0.5rem;content:' ';background: url(./assets/images/dialog-bl.png);background-size: cover;}
+  .dialog-inner:before{position: absolute;bottom:0.26rem;right:0.26rem; width:0.53rem;height:0.5rem;content:' ';background: url(./assets/images/dialog-br.png);background-size: cover;}
+  .dialog-content{position:relative;z-index:200;padding:0.9rem 0.6rem 0.4rem;line-height: .5rem; font-size:0.28rem;color:#be6312;text-align: center;}
+  .dialog-btns{
+    text-align: center;padding:0.1rem 0 0.3rem;
+    .btn{position: relative; display:inline-block;margin:0 0.2rem; width:2.2rem;height:0.8rem;}
+    .btn-0{background: url(./assets/images/dialog-btn-ok.png);background-size: cover;}
+    .btn-1{background: url(./assets/images/dialog-btn-cancel.png);background-size: cover;}
+    .btn-text{position: absolute;left:0; width:100%;height:100%;text-align: center;line-height: 0.8rem;font-size: 0.3rem;color:#fff;font-weight: 600;}
+    .btn-0 .btn-text{text-shadow: -0.025em -0.025em 0 #ad4600, 0.08em -0.025em 0 #ad4600, -0.025em 0.025em 0 #ad4600, 0.025em 0.025em 0 #ad4600;}
+    .btn-1 .btn-text{text-shadow: -0.025em -0.025em 0 #757575, 0.08em -0.025em 0 #757575, -0.025em 0.025em 0 #757575, 0.025em 0.025em 0 #757575;}
+  }
+
+  opacity: 0;-webkit-transition: all 0.2s; transition: all 0.2s;
+  //animate
+  .dialog-animate {-webkit-transform: scale(0.7); transform: scale(0.7); opacity: 0; -webkit-transition: all 0.2s; transition: all 0.2s; }
+  &.show-animate{opacity: 1;}
+  &.show-animate .dialog-animate { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
+  &.hide-animate{opacity: 0;}
+  &.hide-animate .dialog-animate{-webkit-transform: scale(0.7); transform: scale(0.7);opacity: 0;}
+  &.replace-dialog{opacity: 1;-webkit-transition: none; transition: none;}
+}

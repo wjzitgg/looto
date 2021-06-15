@@ -1,0 +1,338 @@
+
+.mine-wrap {
+    background: #F6F4FB;
+    min-height: 100vh;
+    .mine-info {
+        background:linear-gradient(180deg,rgba(213,28,51,1) 0%,rgba(197,29,36,1) 100%);
+        box-shadow:0px 3px 6px 0px rgba(84,105,119,0.05);
+        border-radius:0.16rem;
+        margin: 1rem 0.3rem 0.3rem 0.3rem;
+        position: relative;
+        padding: 0.3rem 0.3rem;
+        .van-uploader__input {
+            top: -.9rem;
+            height: 1.2rem;
+        }
+        .info-top {
+            text-align: center;
+            img {
+                width: 1.2rem;
+                height: 1.2rem;
+                margin-top: -1rem;
+                border-radius: 50%;
+            }
+            p:nth-of-type(1) {
+                font-size: 0.44rem;
+                color: #fff;
+                margin: 0.1rem 0 0 0;
+                .iconxiugai1 {
+                    font-size: 0.28rem;
+                    color: #decfcf;
+                }
+            }
+            p:nth-of-type(2) {
+                font-size: 0.26rem;
+                color: #D28084;
+            }
+        }
+        .info-bottom {
+            display: flex;
+            margin-top: 0.2rem;
+            align-items: flex-end;
+            .bottom-left {
+               
+                div:nth-of-type(1) {
+                    color: #F6C0C4;
+                    font-size: 0.26rem;
+                    display: flex;
+                    align-items: center;
+                    height: 0.6rem;
+                    img {
+                        width: 0.42rem;
+                        margin-left: 0.2rem;
+                        opacity: 0.7;
+                    }
+                }
+                div:nth-of-type(2),div:nth-of-type(3) {
+                    color: #F6C0C4;
+                    font-size: 0.26rem;
+                    display: flex;
+                    align-items: center;
+                    height: 0.6rem;
+                }
+                .amount {
+                   color: #F8E71C;
+                   font-size: 0.32rem;
+                   margin-left: 0.2rem;
+               } 
+            }
+            .bottom-right {
+                flex: 1;
+                text-align: right;
+                position: absolute;
+                right: 0.3rem;
+                span {
+                     color: #EFEFEF;
+                     font-size: 0.22rem;
+                     text-decoration: underline;
+                }
+               
+            }
+        }
+    }
+    
+    
+    .mine-btn-img {
+        display: flex;
+        margin: 0.3rem 0.3rem;
+        div {
+            flex: 1;
+            position: relative;
+            span {
+                color: #fff;
+                position: absolute;
+                font-size: 0.25rem;
+                left: 28%;
+                top: 40%;
+            }
+        }
+        .gray {
+            background: gray;
+            border-radius: 0.12rem;
+        }
+        div:nth-of-type(1) {
+            margin-right: 0.3rem;
+            span {
+                left: 45%;
+            }
+        }
+        img {
+            width: 100%;
+        }
+    }
+    
+    .mine-safe {
+        display: flex;
+        align-items: center;
+        box-shadow:0px 3px 6px 0px rgba(84,105,119,0.05);
+        border-radius:0.16rem;
+        background: #fff;
+        margin: 0.3rem 0.3rem;
+        padding: 0.2rem 0.2rem 0.2rem 0.4rem;
+        position: relative;
+        .safe-left {
+            text-align: center;
+            color: #BC56FF;
+            font-size: 0.24rem;
+            font-weight: 600;
+            .safe-pie {
+                background: #BC56FF;
+                border-radius: 100%;
+                width: 1rem;
+                height: 1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .pie {
+                width: 0.67rem;
+                height: 0.67rem;
+                border-radius: 50%;
+                background: #fff;
+                background-image: linear-gradient(to right, transparent 51%, #BC56FF 0);
+                transition: all 0.3s;
+            }   
+   
+            .pie::before {
+//              
+                content: '';
+                display: block;
+                height: 100%;
+                border-radius: 0 100% 100% 0/50%;
+                background-color: inherit;
+                transform-origin: left;
+                
+//              transform: rotate(.25turn);
+            }
+            .aaa {
+               background: #BC56FF!important;
+               background-image:linear-gradient(to left, transparent 50%, #fff 0)!important;
+            }
+           
+            .aaa::before {
+//              transform: rotate(.25turn);
+                margin-left: 47%;
+                animation: spin 0.5s linear alternate forwards;
+            }
+            .bbb::before {
+//              transform: rotate(.50turn);
+                margin-left: 50%;
+                animation: spin1 0.5s linear alternate forwards;
+            }
+            .ccc::before {
+//              transform: rotate(.25turn);
+                margin-left: 51%;
+                animation: spin2 0.5s linear alternate forwards;
+            }
+            .ddd::before {
+                transform: rotate(.25turn);
+                margin-left: 50%;
+                animation: spin3 0.5s linear alternate forwards;
+            }
+            
+              @keyframes spin{
+                to{transform: rotate(.25turn);}
+              }
+
+               @keyframes spin1{
+                to{transform: rotate(.50turn);}
+              }
+               @keyframes spin2{
+                to{transform: rotate(.25turn);}
+              }
+               @keyframes spin3{
+                to{transform: rotate(0turn);}
+              }
+
+
+        }
+        .safe-center {
+            flex: 2;
+            margin-left: 0.33rem;
+            div:nth-of-type(1) {
+                font-size: 0.3rem;
+                color: #BC56FF;
+            }
+            div:nth-of-type(2) {
+                font-size: 0.22rem;
+                color: rgba(0,0,0,0.34);
+                margin-top: 0.05rem;
+            }
+        }
+        .safe-right {
+            text-align: right;
+            .iconfont {
+                font-size: 0.54rem;
+                color: #bebebe;
+            }
+        }
+    }
+    
+    .mine-route-list {
+        box-shadow:0px 3px 6px 0px rgba(84,105,119,0.05);
+        border-radius:0.16rem;
+        margin: 0.3rem 0.3rem 0 0.3rem;
+        padding-bottom: 1rem;
+        .mine-route {
+            display: flex;
+            background: #fff;
+            align-items: center;
+            padding: 0.2rem 0.2rem 0.2rem 0.3rem;
+            font-size: 0.3rem;
+            font-weight: 600;
+            position: relative;
+            .messageNum {
+                position: absolute;
+                color: #fff;
+                width: 0.3rem;
+                height: 0.3rem;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #F7232C;
+                font-size: 0.17rem;
+                left: 0.7rem;
+                top: 0.15rem;
+            }
+            img {
+                width: 0.6rem;
+                height: 0.6rem;
+                margin-right: 0.2rem;
+            }
+            .iconfont {
+                font-size: 0.54rem;
+                color: #bebebe;
+                flex: 1;
+                text-align: right;
+            }
+            .route-text {
+                color: #D0021B;
+            }
+        }
+    }
+    
+    
+   .pay-bottom-btn {
+       a {
+           flex: 1;
+           text-align: center;
+           color: #007AFF;
+           height: 1rem;
+           line-height: 1rem;
+           display: inline-block;
+       }
+   }
+    
+    
+    
+    
+    //提现框
+    
+    
+    
+    //新手引导
+    //绑定手机号引导
+    .guide-0 {
+        top: 4rem;
+        p {
+            height: 1rem;
+        }
+        .iconxiangxia {
+            left: 48%;
+            bottom: -32%;
+        }
+    }
+    
+    //推广员系统引导
+
+    
+     .guide-1 {
+        top:6.5rem;
+        p {
+            height: 0.5rem;
+        }
+        .iconxiangxia {
+            left: 48%;
+            bottom: -42%;
+        }
+    }
+    
+    .guide-2 {
+        top: 1.8rem;
+        p {
+            height: 0.5rem;
+        }
+        .iconxiangshang {
+            right: 5%;
+            top: -32%;
+        }
+    }
+    
+     .guide-3 {
+        top: 9.5rem;
+        p {
+            height: 1rem;
+        }
+        .iconxiangshang {
+            right: 22%;
+            top: -32%;
+        }
+
+    }
+    
+    .guideActive {
+        z-index: 9999999;
+        box-shadow: 0px 0px 5px -1px #d5d5d5;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "project" : "FantasyLand",
+  "title":"FantasyLand",
+  "gameConfig":{
+    "fixedNumCoin":1,
+    "fixedNumQuote":3,
+    "coinTypeName":{
+      "0":"人民币",
+      "1":"金币",
+      "2":"宝石",
+      "3":"铜币"
+    },
+    "feeRatio":0.1
+  }
+
+}

@@ -1,0 +1,22 @@
+html,body{height: 100%;}
+.page-wrap{position:relative;min-height: 100%; -webkit-filter: blur(0px);filter: blur(0px);}
+.page-wrap.has-nav{padding-bottom:49px; }
+
+.header {position: relative;height:44px;width: 100%;text-align: center;z-index: 1000; }
+.header .side-left, .header .side-right {position: absolute;top: 0;width: 68px;bottom:0;line-height: 44px;font-size: 16px; }
+.header a{display: block;width:100%;height:100%;font-size: 16px;}
+.header .side-left {left: 0;}
+.header .side-right {right: 0;}
+.header .title {padding:0px 48px; font-size: 18px; text-align: center; line-height: 44px; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;min-height: 46px; }
+.header .title.two-line{padding-top:5px; line-height: 18px;}
+.header .title .t{font-size: 16px;line-height: 18px;}
+.header .title .b{font-size: 11px;line-height: 18px;}
+.header .iconfont { display:inline-block;width:24px;font-size: 24px; }
+
+.main-content { position: absolute; left: 0; right: 0; top: 44px; bottom: 49px; overflow: auto; -webkit-overflow-scrolling: touch; }
+.main-content.no-footer { bottom: 0; }
+.main-content.no-header { top: 0; }
+.app-no-nav .main-content{bottom:0;}
+
+
+

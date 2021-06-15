@@ -1,0 +1,322 @@
+    
+    .tickets-wrap2 {
+        background: #fff !important;
+        overflow: hidden;
+        padding-top: 1.2rem;
+        .filtrate{
+            display: flex;
+            background-color: #fff;
+            padding-top: .2rem;
+            .filtrate-lf{
+                width: 40%;
+                padding-right: 1rem;
+                .van-dropdown-menu__bar {
+                    height: auto;
+                    box-shadow: none;
+                    .van-dropdown-menu__title {
+                        font-size: .2rem !important;
+                    }
+                }
+            }
+            .filtrate-rt {
+                width: 60%;
+                font-size: .16rem;
+                .van-tabbar{
+                    height: auto;
+                }
+            }
+           
+        }
+        #myChart {
+            width: 100%;
+            height: 3rem;
+        }
+        #myChart2 {
+            width: 100%;
+            height: 3rem;
+        }
+        
+        .tab-number {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 .2rem;
+            font-size: .16rem;
+            .ziehung {
+                border: 1px solid #ffeaea;
+                padding: .04rem .1rem;
+            }
+            .line {
+                display: flex;
+                align-items: center;
+                span:nth-child(1){
+                    display: inline-block;
+                    width: .5rem;
+                    height: 2px;
+                    margin-right: .1rem;
+                    background-color: #c0504d;
+                }
+            }
+            .van-dropdown-menu__bar {
+                padding-right: .15rem;
+                height: auto;
+                box-shadow: none;
+                border: 1px solid #ffeaea;
+                .van-dropdown-menu__title {
+                    font-size: .20rem;
+                    line-height: 1;
+                    padding: .04rem .1rem;
+                }
+            }
+        }
+        .Jumpto-buy {
+            margin: 0.1rem .2rem;
+            border: 1px solid #f9f9f9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: .16rem;
+        }
+        // 留言板
+        .msg-board {
+            padding: 0 .4rem;
+            .list-msg {
+                position: relative;
+                display: flex;
+                margin-bottom: .2rem;
+                .img-msg {
+                    width: .6rem;
+                    height: .6rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: .1rem;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .text {
+                    border-radius: .2rem;
+                    font-size: .2rem;
+                    letter-spacing: 0.02rem;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                    background-color: #f0f2f5;
+                    padding: 0.1rem 0.2rem;
+                    p {
+                        color: #000;
+                    }
+                }
+            }
+        }
+        // 发送
+        .msg-send {
+            background: #eee;
+            padding: .1rem .3rem;
+            border-top: 1px #D0D0D0 solid;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            left: 0;
+            bottom: 1.2rem;
+            input {
+                flex: 1;
+                height: .6rem;
+                box-shadow: 0px -1px 7px #d2cece;
+                letter-spacing: .03rem;
+                border-radius: .1rem;
+            }
+            input::placeholder {
+                font-size: .18rem;
+                color: rgb(204, 204, 197);
+                letter-spacing: 0.01rem;
+            }
+            .send-img {
+                width: .8rem;
+                height: .6rem;
+                background-image: url('../../assets/images/send.png');
+                background-size: 70% 70%;
+                background-repeat: no-repeat;
+                background-position: .1rem;
+                background-color: #fff;
+                border: 1px solid #d1e7dc;
+                border-radius: .1rem;
+                margin-left: .1rem;
+            }
+        }
+        .pull-down {
+            text-align: center;
+            font-size: .3rem;
+            font-weight: 600;
+            color: #5f9de6;
+            margin-bottom: .2rem;
+            .van-icon-question-o {
+                position: absolute;
+                right: .2rem;
+                color: #000;
+            }
+        }
+        .tab-select {
+            // display: flex;
+            // width: 100%;
+            // height: 100%;
+            // will-change: left;
+           
+            .van-list {
+                width: 100%;
+                position: fixed;
+                bottom: 1.6rem;
+                top: 7.1rem;
+                overflow-y: scroll;
+                height: auto;
+                // height: calc(100vh - 8.83rem);
+                // overflow: scroll;
+             }
+        }
+        .tab-item {
+            transition-duration: 0.3s;
+            // flex-shrink: 0;
+            // box-sizing: border-box;
+            // width: 100%;
+        }
+        // 榜单列表
+        .bangdan{
+            padding: .1rem .63rem;
+            position: absolute;
+            top: 2.7rem;
+            bottom: 4.2rem;
+            overflow: auto;
+            height: auto;
+            width: 100%;
+            .bd-top {
+                display: flex;
+                align-items: center;
+                // justify-content: space-between;
+            }
+        }
+        .monthly{
+            width: 1.76rem;
+            height: 2.15rem;
+            padding-top: .26rem;
+            box-shadow: 0 0 4px 0 #5f9de6;
+            border-radius: 5px;
+            text-align: center;
+            .head-img{
+                width: .98rem;
+                height: .98rem;
+                border-radius: 50%;
+                overflow: hidden;
+                margin: 0 auto .18rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            // 皇冠
+            .hg-img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: .1rem;
+                img {
+                    width: .34rem;
+                    margin-right: .1rem;
+                }
+                span {
+                    font-size: .23rem;
+                    font-weight: 600;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+            p {
+                font-size: .23rem;
+                font-weight: 600;
+            }
+        }
+        .monthly:nth-child(2){
+            width: 2.22rem;
+            height: 2.92rem;
+            margin: 0 0.25rem;
+            .head-img{
+                width: 1.4rem;
+                height: 1.4rem;
+            }
+            .hg-img {
+                img {
+                    width: .44rem;
+                }
+                span {
+                    font-size: .28rem;
+                }
+            }
+            p {
+                font-size: .24rem;
+            }
+        }
+        .list {
+           
+            li {
+                height: .8rem;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                margin: .2rem 0;
+                box-shadow: 0 0 4px 0 #5f9de6;
+                border-radius: 5px;
+                .paixu{
+                    width: 20%;
+                    text-align: center;
+                }
+                .money{
+                    flex: 1;
+                    padding-right: .2rem;
+                    text-align: right;
+                }
+                .header-img {
+                    width: .68rem;
+                    height: .68rem;
+                    
+                    border-radius: 50%;
+                    overflow: hidden;
+                    // background-color: pink;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .list-rt {
+                        flex: 1;
+                        font-weight: 600;
+                        font-size: .3rem;
+                        text-align: center;
+                }
+               
+            }
+            
+        }
+        .explain {
+            position: fixed;
+            bottom: 1.3rem;
+            left: 50%;
+            width: 7rem;
+            margin-left: -3.5rem;
+            background-color: #fff;
+            box-shadow: 0 0 4px 0 #5f9de6;
+            padding: .16rem .4rem;
+            font-size: .24rem;
+            border-radius: 5px;
+            p{
+                line-height: 1.4;
+            }
+        }
+    }
+ 
+
+ 
+
+
+
+

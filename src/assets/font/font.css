@@ -1,0 +1,6 @@
+@font-face {  
+  font-family: 'SFPro';  //重命名字体名
+  src: url('./SFPro Regular.ttf');  //引入字体
+  font-weight: normal;  
+  font-style: normal;  
+}

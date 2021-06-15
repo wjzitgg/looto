@@ -1,0 +1,39 @@
+.app{height:100%;}
+.page-wrap{
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    /*box*/
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    -moz-box-orient:vertical;
+    -webkit-box-orient:vertical;
+    box-orient:vertical;
+    /*flex*/
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction:column;
+    flex-direction:column;
+    box-shadow: 0 0 8px rgba(0,0,0,.5);
+}
+.page-content{
+    position: relative;
+    background:#efefef;
+    overflow: scroll;
+    -webkit-overflow-scrolling:touch ;
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    /*box*/
+    -moz-box-flex:1;
+    -webkit-box-flex:1;
+    box-flex:1;
+    /*flex*/
+    -ms-flex-grow:1;
+    -webkit-flex-grow:1;
+    flex-grow:1;
+}

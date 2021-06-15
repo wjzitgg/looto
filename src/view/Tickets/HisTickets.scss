@@ -1,0 +1,610 @@
+    .hicTickets-wrap {
+        background: #F6F4FB;
+        min-height: 100vh;
+
+        .tickets-top {
+            display: flex;
+            margin: 0.5rem 0.3rem 0.2rem 0.3rem;
+            div:nth-of-type(1) {
+                display: flex;
+                align-items:center;
+                span {
+                    color: #D0021B;
+                    font-weight: 600;
+                }
+                
+                .iconfont {
+                    color: #CD031D;
+                    font-size: 0.4rem;
+                    margin-right: 0.05rem;
+                }
+            }
+            .calendar {
+                flex: 3;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                .iconrili {
+                    font-size: 0.54rem;
+                    color: #C81F27;
+                }
+                div {
+                    background:rgba(240,239,239,1);
+                    border-radius:0.3rem;
+                    font-size: 0.22rem;
+                    color: #696969;
+                    padding: 0.08rem 0.3rem;
+                    margin-left: 0.1rem;
+                }
+            }
+            div:nth-of-type(3) {
+                flex: 1;
+                text-align: right;
+                img {
+                    width: 0.4rem;
+                }
+            }
+        }
+        .van-overlay {
+            z-index: 2000!important;
+        }
+        .van-calendar__popup {
+            height: 75%!important;
+        }
+        .calendar-bg {
+            position: fixed;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background:rgba(203,29,41,0.68);
+            z-index: 2002;
+            
+            
+            padding-top: 1.5rem;
+            .bg-fix {
+                position: fixed;
+                bottom: 80%;
+                width: 100%;
+            }
+            .bg-top {
+                display: flex;
+                margin: 0.3rem 0.25rem 0 0.25rem;
+                div {
+                    background: #d5e8ef;
+                    flex: 1;
+                    text-align: center;
+                    margin-right: 0.25rem;
+                    border-radius: 4px;
+                    padding: 0.17rem 0;
+                    font-size: 0.25rem;
+                }
+                div:active {
+                    background: rgba(243,143,143,0.4);
+                }
+                div:nth-of-type(3) {
+                    margin-right: 0;
+                }
+            }
+            .bg-bottom {
+                display: flex;
+                justify-content: center;
+                color: #fff;
+                font-size: 0.45rem;
+                .bg-center {
+                    margin: 0 0.4rem;
+                }
+            }
+            
+        }
+        
+        
+        
+        .tickets-list {
+            margin: 0.2rem 0.3rem 0 0.3rem;
+            padding-bottom: 0.3rem;
+            .tickets-list-wrap {
+                background:#fff;
+                box-shadow:0px 0px 5px 0px rgba(0,0,0,0.07);
+                border-radius:3px;
+                padding: 0.3rem 0.12rem;
+                .wrap-title {
+                    display: flex;
+                    padding: 0 0.2rem;
+                    div:nth-of-type(1) {
+                        color: #696969;
+                        font-size: 0.26rem;
+                    }
+                    div:nth-of-type(2) {
+                        font-size: 0.24rem;
+                        flex: 1;
+                        text-align: right;
+                        span:nth-of-type(1) {
+                            color: #898989;
+                        }
+                        span:nth-of-type(2) {
+                            color: #FF7000;
+                        }
+                    }
+                }
+                
+                .wrap-list {
+                    .list-cell {
+                        background:rgba(245,245,245,1);
+                        border-radius:4px;
+                        border:1px dashed rgba(228,228,228,1);
+                        margin-top: 0.2rem;
+                        padding: 0.2rem 0;
+                        position: relative;
+                        .iconxiangyou {
+                            position: absolute;
+                            right: 0;
+                            top: 30%;
+                            font-size: .6rem;
+                            color: #999;
+                        }
+                        .van-cell {
+                            background: initial;
+                            padding: 0 0.2rem;
+                        }
+                         .van-collapse-item__content {
+                            padding: 0 0 0.2rem 0;
+                            background: whitesmoke;
+                        }
+                        .van-cell__right-icon {
+                            position: absolute;
+                            right: 0.2rem;
+                            top: 0.1rem;
+                        }
+                        .cell-type {
+                            padding: 0 0.2rem 0.1rem 0.2rem;
+                            color: #999;
+                            font-size: 0.25rem;
+                        }
+                        .right-text {
+                            position: absolute;
+                            right: 0.6rem;
+                            font-size: 0.25rem;
+                            top: 0.1rem;
+                            color: #999;
+                        }
+                        .cell-top {
+                            display: flex;
+                            flex-wrap: wrap;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 0.2rem;
+                            div {
+                                flex: 0 0 14.2%;
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 0.17rem;
+                                span {
+                                    background: #fff;
+                                    border:1px solid rgba(205,204,202,1);
+                                    border-radius: 100%;
+                                    height: 0.7rem;
+                                    width: 0.7rem;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                }
+
+ 
+                            }
+                            div:nth-of-type(2) {
+                                span {
+                                    color: #3EA63E;
+                                }  
+                            }
+                            .blue {
+                                flex: 0 0 50%;
+                                margin-left: 0.1rem;
+                            }
+                        }
+                        .cell-bottom {
+                            display: flex;
+                            font-size: 0.22rem;
+                            padding: 0 0 0 0.1rem;
+                            .bottom-left {
+                                .wait-pay {
+                                    text-decoration: underline;
+                                    color: blue;
+                                }
+                                span:nth-of-type(1) {
+                                    color: #A7A7A7;
+                                }
+                                span:nth-of-type(2) {
+                                    color: #D0021B;
+                                }
+                                b:nth-of-type(1) {
+                                    color: #D0021B;
+                                    margin: 0 0.09rem 0 0.04rem;
+                                    font-weight: normal;
+                                }
+                                b:nth-of-type(2) {
+                                    color: #3B4DF1;
+                                    font-weight: normal;
+                                }
+                                .blue {
+                                    color: #3B4DF1!important;
+                                    font-size: 0.24rem;
+                                }
+                            }
+                            .bottom-center {
+                                flex: 1;
+                                text-align: right;
+                                b:nth-of-type(1) {
+                                    color: #D0021B;
+                                }
+                            }
+                            .bottom-right {
+                                flex: 1;
+                                text-align: right;
+                                display: flex;
+                                justify-content: flex-end;
+                                align-content: center;
+                                margin-left:0.15rem;
+                                color:#CCC9CD;
+                                font-size: 0.22rem;
+                                
+                                span {
+//                                  text-decoration: underline;
+                                }
+                                span:nth-of-type(2) {
+                                    color: #D0021B;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+         //开奖详情
+        .lottery-detail-popup {
+            width: 100%!important;
+            top: 1.1rem;
+        }
+//      .van-overlay {
+//          top: 0.9rem;
+//      }
+        .lottery-detail {
+            background: #fff;
+            width: 100%;
+            padding: 0.6rem 0.2rem;
+            
+            .iconguanbi {
+                position: absolute;
+                top: 0.05rem;
+                right: 0.05rem;
+                color: #B4B2B2;
+                font-size: 0.5rem;
+                padding: 0.2rem;
+            }
+            .lottery-detail-title {
+                text-align: center;
+                p:nth-of-type(1) {
+                    color: #696969;
+                    font-size: 0.4rem;
+                }
+                p:nth-of-type(2) {
+                    font-size: 0.22rem;
+                    margin: 0 0 0.1rem 0;
+                    span:nth-of-type(1) {
+                        color: #C1BCBC;
+                    }
+                    span:nth-of-type(2) {
+                        color: #D0021B;
+                    }
+                }
+                p:nth-of-type(3) {
+                    color: #898989;
+                    font-size: 0.26rem;
+                }
+            }
+            .lottery-detail-first {
+                background:rgba(208,2,27,1);
+                box-shadow:0px 0px 5px 0px rgba(0,0,0,0.07);
+                border-radius:0.1rem;
+                padding: 0.1rem 0.2rem;
+                margin: 0.15rem 0 0.25rem 0;
+                position: relative;
+                .odd-even-text {
+                    position: absolute;
+                    right: 0.3rem;
+                    top: 0.5rem;
+                    color: #F8E71C;
+                }
+                .first-wrap {
+                    display: flex;
+                    margin: 0.16rem 0;
+                    div {
+                        flex: 1;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 0.78rem;
+                        height: 0.78rem;
+                        border-radius: 100%;
+                        color: #707070;
+                        font-size: 0.36rem;
+                        background: #fff;
+                        border:1px solid rgba(205,204,202,1);
+                    }
+                    div:nth-of-type(2) {
+                        span {
+                          color: #3EA63E;  
+                        } 
+                    }
+                }
+                .lottery-num-bse {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+                    margin: .16rem 0;
+                    span {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 0.78rem;
+                        height: 0.78rem;
+                        border-radius: 100%;
+                        color: #707070;
+                        font-size: 0.36rem;
+//                      margin-right: 0.15rem;
+                        border:1px solid rgba(205,204,202,1);
+                        background: #fff;
+                         margin-right: 0.2rem;
+                    }
+                    span:nth-of-type(1) {
+                       
+                    }
+                    span:nth-of-type(4) {
+                        color: #3EA63E;
+                    }
+                    b:nth-of-type(1) {
+                        margin-top: 0.15rem;
+                        margin-right: 0.04rem;
+                        font-size: 0.4rem;
+                        color: #fff;
+                    }
+                    b:nth-of-type(2) {
+                        margin: 0 0.2rem;
+                        font-size: 0.5rem;
+                         color: #fff;
+                    }
+                }
+                .first-center {
+                    display: flex;
+                    align-items: center;
+                    margin: 0.3rem 0 0.2rem 0;
+                    div:nth-of-type(1) {
+                        color: #F8E71C;
+                        font-size: 0.26rem;
+                    }
+                    div:nth-of-type(2) {
+                        flex: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-content: center;
+                        color:#fff;
+                        font-size: 0.26rem;
+                        .iconfont {
+                            margin-left: 0.05rem;
+                            transition: all 0.2s;
+                        }
+                    }
+                }
+                .first-bottom {
+                    font-size: 0.26rem;
+                    color: #fff;
+                    .amount {
+                        color: #F8E71C;
+                    }
+                }
+            }
+            
+            
+            .lottery-list {
+                max-height: 7rem;
+                overflow: auto;
+                .amount {
+                    color: #D0021B;
+                }
+                .lottery-Consolation {
+                    border-bottom: 1px dashed #EDEAED;
+                    margin: 0.3rem 0;
+                    .list-block-title {
+                        font-size: 0.26rem;
+                        color: #696969;
+                        margin: 0 0.2rem;   
+                    }
+                    .Consolation-list {
+                        display: flex;
+                        justify-content: center;
+                        margin: 0.3rem 0;
+  
+                        span {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 0.78rem;
+                            height: 0.78rem;
+                            border-radius: 100%;
+                            color: #707070;
+                            font-size: 0.36rem;
+                            margin-right: 0.15rem;
+                            background: #fff;
+                            border:1px solid rgba(205,204,202,1);
+                        }
+                    }
+                }
+                .no-border {
+                    border-bottom: 0;
+                }
+                
+                .lottery-price-list {
+                   border-bottom: 1px dashed #EDEAED;
+                   margin: 0.3rem 0;
+                    .list-block-title {
+                        font-size: 0.26rem;
+                        color: #696969;
+                        margin: 0 0.2rem;                    }
+                    .price-list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 0.3rem 0;
+  
+                        span {
+                            flex: 0 0 20%;
+                            text-align: center;
+
+                            color: #B7B7B7;
+                            font-size: 0.3rem;
+                            margin-bottom: 0.25rem;
+
+                        }
+                    } 
+                }
+            }
+            
+            
+            //指数
+            .bse-wrap {
+                padding: 0.15rem 0.2rem;
+                margin-bottom: 4rem;
+                .bse-title {
+                    margin-bottom: 0.17rem;
+                    display: flex;
+                    align-items: center;
+                    span:nth-of-type(1) {
+                        color: #2344F8;
+//                      text-decoration: underline;
+                        font-size: 0.26rem;     
+                    }
+                    span:nth-of-type(2) {
+                        flex: 1;
+                        text-align: right;
+                        color: #999;
+                        font-size: 0.26rem;
+                    }
+                }
+                .current-bse {
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.26rem;
+                    color: #999;
+                    b {
+                        color: #333;
+                    }
+                    div:nth-of-type(1) {
+                        font-weight: bold;
+                        color: #333;
+                       span {
+                            margin-left: 0.2rem;
+                            font-weight: normal;
+                        }
+                    }
+                    div:nth-of-type(2) {
+                        flex: 1;
+                        text-align: right;
+                    }
+                }
+                .current-bse-btc {
+                    .usd {
+                        border-bottom: 1px solid #2344F8;
+                        color: #2344F8;
+                        font-size: 0.26rem;
+                    }
+                    p {
+                        font-size: 0.26rem;
+                    }
+                    p:nth-of-type(1) {
+                        margin: 0.1rem 0 0.1rem 0;
+                    }
+                }
+                //指数上升
+                .rise {
+                    color: #08F150;
+                    .iconfont {
+                        color: #08F150;
+                    }
+                }
+                //指数下降
+                .decline {
+                    color: #F72316;
+                    .iconfont {
+                        color: #F72316;
+                    }
+                }
+                .day-bse {
+                    margin: 0.15rem 0;
+                    div {
+                        display: flex;
+                        margin-bottom: 0.17rem;
+                        font-size: 0.26rem;
+                        color: #999;
+                        b {
+                            color: #333;
+                        }
+                        span:nth-of-type(2) {
+                            flex: 1;
+                            text-align: right;
+                        }
+                    }
+                  
+                }
+ 
+            }
+            
+            
+            
+            
+            //按钮
+            .lottery-detail-btn {
+                display: flex;
+                margin: 1.3rem 0.2rem 0.5rem 0.2rem;
+                .detail-btn {
+                    flex: 1;
+                    text-align: center;
+                    height: 0.8rem;
+                    line-height: 0.8rem;
+                    background: #D0021B;
+                    color: #fff;
+                    font-size: 0.26rem;
+                    border-radius: 4px;
+                }
+                .detail-btn:nth-of-type(1) {
+                    margin-right: 0.3rem;
+                }
+                .detail-btn:nth-of-type(2) {
+                    background: #49B345;
+                }
+            }
+        }
+        
+        
+        //开奖详情
+
+    }
+ 
+ 
+ 
+
+
+
+

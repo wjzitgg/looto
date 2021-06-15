@@ -1,0 +1,1885 @@
+    .lottery-wrap {
+        background: #F6F4FB;
+        min-height: 100vh;
+        
+        .lottery-notice {
+            position: fixed;
+            top: 1.2rem;
+            width: 100%;
+            z-index: 999;
+        }
+        
+        .lottery-buy {
+            background: #fff;
+            border-radius:4px;
+            margin: 0.16rem 0.26rem;
+            padding-bottom: .24rem;
+            .lottery-title {
+               padding: 0.3rem 0.24rem 0;
+           
+                div {
+                    // flex: 1;
+                    // text-align: right;
+                    img {
+                        width: 0.4rem;
+                    }
+                }
+            }
+            .buy-top {
+                // display: flex;
+                // padding: 0 0.24rem;
+                div:nth-of-type(1) {
+                    display: flex;
+                    align-items: center;
+                    padding: .2rem 0;
+                    p:nth-of-type(1) {
+                        font-size: 0.26rem;
+                        color: #35a2f2;
+                        display: flex;
+                        align-items: flex-end;
+                        
+                    }
+                    .iconfont {
+                        color: #333;
+                        font-size: 0.25rem;
+                        margin-left: 0.05rem;
+                    }
+                    .iconwenhao {
+                        font-size: .4rem;
+                    }
+                    
+                }
+                div:nth-of-type(2) {
+                    flex: 1;
+                    text-align: right;
+                    img {
+                        width: 0.4rem;
+                    }
+                }
+            }
+            
+            .select-odd-or-even {
+                padding: 0.15rem 0.24rem 0.15rem 0.24rem;
+                // border-top: 0.16rem solid #F5F7FB;
+                font-size: 0.26rem;
+                // height: 1rem;
+                
+                display: flex;
+                .van-tabs {
+                    width: 100%;
+                    .van-tab {
+                        line-height: initial;
+                        font-size: 0.26rem;
+                    }
+                    .van-tabs__wrap {
+                        height: initial!important;
+                    }
+                    .van-tab--active {
+                        color: #35a2f2;
+                    }
+                    .van-tabs__line {
+                        background-color: #35a2f2;
+                        bottom: 4px;
+                    }
+                    .van-tabs__nav--line {
+                        height: initial;
+                    }
+                }
+                .van-hairline--top-bottom::after, .van-hairline-unset--top-bottom::after {
+                    border-width: 0;
+                }
+                .odd-span {
+                    margin-right: 0.35rem;
+                    border-bottom: 1px solid #fff;
+                }
+                .activeOddEven {
+                    color: #35a2f2;
+                    border-bottom: 1px solid #35a2f2;
+                    transition: all 0.3s;
+                    font-weight: 600;
+                }
+            }
+            .iconxiangzuo {
+                font-size: 0.35rem;
+                color: #999;
+            }
+            //复投
+            .reinvest-right {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                font-size: 0.24rem;
+                .van-button--danger {
+                    background: #35a2f2;
+                    border:1px solid #35a2f2;
+                    color: #fff;
+                    border-radius: 0.1rem;
+                    height: 0.45rem;
+                    line-height: 0.4rem;
+                    font-size: 0.24rem;
+                    padding: 0 0.22rem;
+                    margin-right: 0.3rem;
+                }
+    
+                .reinvest-right-detail {
+                    color: #35a2f2;
+                    border-bottom: 1px solid #35a2f2;
+                }
+            }
+            
+            .select-text {
+                font-size: 0.22rem;
+                color:#949191;
+                margin-top: 0.05rem;
+                padding: 0 0.24rem;
+                margin-bottom: 0.5rem;
+            }
+            .select-textA {
+                padding: 0!important;
+            }
+            //指数
+            .bse-wrap {
+                padding: 0.3rem 0.24rem 0 0.24rem;
+                .van-loading {
+                    padding: 0.2rem 0;
+                    text-align: center;
+                }
+                .bse-title {
+                    margin-bottom: 0.17rem;
+                    display: flex;
+                    align-items: center;
+                    span:nth-of-type(1) {
+                        color: #35a2f2;
+                        // text-decoration: underline;
+                        font-size: 0.26rem;     
+                    }
+                    span:nth-of-type(2) {
+                        flex: 1;
+                        text-align: right;
+                        color: #999;
+                        font-size: 0.26rem;
+                    }
+                }
+                .iconxiajiang_huaban {
+//                   color: #2344F8;
+                     font-size: 0.25rem;
+                     margin-left: 0.05rem;
+                }
+                .iconwenhao {
+                    font-size: .4rem;
+                }
+                .current-bse {
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.26rem;
+                    color: #999;
+                    b {
+                        color: #333;
+                        display: inline-block;
+                        height: 0.45rem;
+                        
+                    }
+                    .active-bse-data {
+                        animation: act-bse-data 1s alternate forwards;
+                    }
+                    @keyframes act-bse-data{
+                        20% {
+                            font-weight: bolder;
+                        }
+                        100%{  
+                            color: #333;
+                            font-weight: bolder;
+                        }
+                    }
+                    div:nth-of-type(1) {
+                        font-weight: bold;
+                        color: #333;
+                        font-size: 0.28rem;
+                       span {
+                            margin-left: 0.2rem;
+                            font-weight: normal;
+                        }
+                    }
+                    div:nth-of-type(2) {
+                        flex: 1;
+                        text-align: right;
+                    }
+                }
+                //指数上升
+                .rise {
+                    color: #08F150!important;
+                    .iconfont {
+                        color: #08F150;
+                        font-size: 0.29rem;
+                    }
+                }
+                .active-bse-current {
+                    font-size: 0.36rem;
+                    margin-top: .26rem;
+                    font-weight: 600;
+                    letter-spacing: 0.02rem;
+                }
+                //指数下降
+                .decline {
+                    color: #F72316!important;
+                    .iconfont {
+                        color: #F72316;
+                        font-size: 0.29rem;
+                    }
+                }
+                .day-bse {
+                    margin: 0.15rem 0;
+                    div {
+                        display: flex;
+                        margin-bottom: 0.17rem;
+                        font-size: 0.26rem;
+                        color: #999;
+                        b {
+                            color: #333;
+                        }
+                        span:nth-of-type(2) {
+                            flex: 1;
+                            text-align: right;
+                        }
+                        .active-bse-data {
+                            animation: act-bse-data 1.6s alternate forwards;
+                        }
+                        @keyframes act-bse-data{
+                            20% {
+                                font-weight: bolder;
+                            }
+                            100%{  
+                                color: #333;
+                                font-weight: bolder;
+                            }
+                        }
+                    }
+                  
+                }
+                
+                
+                
+                .bse-select {
+                    border-top: 1px dotted #ddd;
+                    margin-top: 0.3rem;
+                    .select-tab {
+                        display: flex;
+                        border-radius: .2rem;
+                        overflow: hidden;
+                        border: 1px solid #E9EAEB;
+                        span {
+                            height: 1rem;
+                            flex: 1;
+                            text-align: center;
+                            padding: 0.12rem 0;
+                            font-size: 0.26rem;
+                            i {
+                                font-style: normal;
+                                display: block;
+                                margin-top: .1rem;
+                            }
+                            
+                        }
+                        span:nth-child(2) {
+                            border-left: 1px solid #E9EAEB;
+                            border-right: 1px solid #E9EAEB;
+                        }
+                        .activeType {
+                            background: #F50000;
+                            color: #fff;
+                        }
+                    }
+                    .van-checkbox-group {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 0.15rem 0 0.15rem 9%;
+                        .van-checkbox {
+                            flex: 0 0 48%;
+                            margin-bottom: 0.33rem;
+                            .van-checkbox__label {
+                                font-size: 0.24rem;
+                            }
+                        }
+                    }
+                    .van-radio-group {
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        padding: 0.25rem 0 0 9%;
+                        .van-radio {
+                            flex: 0 0 48%;
+                            margin-bottom: 0.33rem;
+                            .van-radio__label {
+                                font-size: 0.24rem;
+                            }
+                        }
+//                      .u-f16 {
+//                          .van-radio__label {
+//                              font-size: 0.28rem;
+//                          }
+//                      }
+                    }
+                    
+                    
+                }
+                
+            }
+            
+            
+            
+ .calculagraph {
+     text-align: center;
+     line-height: 2.5;
+     font-weight: 600;
+     font-size: .3rem;
+ }           
+            
+            
+            //指数
+            .buy-num {
+                display: flex;
+                padding-bottom: .2rem;
+                margin: 0 .24rem;
+                justify-content: center;
+                position: relative;
+                // border-bottom: 1px dashed #E9EAEB;
+                // .calculagraph {
+                //     width: 100%;
+                //     position: absolute;
+                //     top: -.7rem;
+                //     font-size: .28rem;
+                   
+                // }
+                .buy-block {
+//                  flex: 1;
+                    // display: flex;
+                    // justify-content: center;
+                    // align-items: center;
+                    width: 0.78rem;
+                    height: 0.78rem;
+                    color: #fff;
+                    border-radius: 100%;
+                    margin-right: 0.15rem;
+                    background-image: url('../../assets//images/qiu/jiahaoqiu.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                }
+                .kongqiu {
+                    background-image: url('../../assets//images/qiu/jiahaoqiu.png') !important;
+                }
+                .jishuqiu{
+                    background-image: url('../../assets/images/qiu/oushuqiu.png');
+                }
+                .oushuqiu {
+                    background-image: url('../../assets/images/qiu/jishuqiu.png');
+                }
+                div {
+                    overflow: hidden;
+                    transition: all 0.2s;
+                }
+                p,span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 0.78rem;
+                    width: 0.78rem;
+//                  height: 0.78rem;
+//                  border-radius: 100%;
+                    // color: #fff;
+                    font-size: 0.38rem;
+//                  margin-right: 0.15rem;
+//                  border:1px solid rgba(205,204,202,1);
+                    transition: all 0.2s;
+                }
+                @keyframes opacity-alt2{
+                    0% {
+                        -webkit-transform: scale(1);
+                        -moz-transform: scale(1);
+                        -ms-transform: scale(1);
+                        -o-transform: scale(1);
+                        transform: scale(1);
+                    }
+                    50%{
+                        -webkit-transform: scale(1.2);
+                        -moz-transform: scale(1.2);
+                        -ms-transform: scale(1.2);
+                        -o-transform: scale(1.2);
+                        transform: scale(1.2);
+                    }
+                    100%{
+                        -webkit-transform: scale(1);
+                        -moz-transform: scale(1);
+                        -ms-transform: scale(1);
+                        -o-transform: scale(1);
+                        transform: scale(1);
+                    }
+                }
+                .active-num {
+                    color: #fff;
+                    box-shadow: 0 0 7px #333;
+                    animation: opacity-alt2 2s infinite;
+                }
+                .active-animation {
+                    box-shadow: 0px 0px 10px red;
+                     animation:opacity-alt2 2s infinite;
+                    -moz-animation:opacity-alt2 2s infinite; /* Firefox */
+                    -webkit-animation:opacity-alt2 2s infinite; /* Safari and Chrome */
+                    -o-animation:opacity-alt2 2s infinite; /* Opera */
+                }
+                .bseSelectNum:nth-of-type(1) {
+//                  margin-right: 0.1rem;
+                }
+                .point {
+                    position: absolute;
+                    bottom: -0.05rem;
+                    left: 2.85rem;
+                    font-size: 0.4rem;
+                    font-weight: normal;
+                }
+             
+                div:nth-of-type(2) {
+                    .selectNum-active {
+                        color: #c7ff14;
+                    }  
+                }
+                
+            }
+            // 园点虚线
+            .linear {
+                // padding-top: .1rem;
+                height: .3rem;
+                border-top:1px dashed#E9EAEB;
+            }
+            .explain {
+                font-size: .28rem;
+                font-weight: 600;
+                color: #686868;
+            }
+            .ball {
+                background-image: linear-gradient(#E60000,#8A0004);
+                width: .4rem;
+                height: .4rem;
+                line-height: .4rem;
+                text-align: center;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 1px solid #fff;
+                color: #fff;
+                margin: 0 auto;
+            }
+            
+            //猜单双
+            .odd-even-select {
+                display: flex;
+                margin: 0.16rem 0;
+                justify-content: center;
+                position: relative;
+                .buy-block {
+//                  flex: 1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 1.76rem;
+                    height: 1.76rem;
+                    border-radius: 100%;
+                    background-image: url('../../assets/images/qiu/oushuqiu.png');
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    font-size: 0.3rem;
+                    font-weight: 600;
+                    color: #fff;
+                    box-shadow: 0 3px 5px #999;
+                }
+                .buy-block:nth-of-type(1) {
+                    margin-right: 0.35rem;
+                    background-image: url('../../assets/images/qiu/jishuqiu.png');
+                }
+                .activeEindex {
+                    // border: 1px solid #D0021B;
+                    // color: #D0021B;
+                    box-shadow: 0px 0px 10px red;
+                    animation:opacity-alt2 2s infinite;
+                }
+                
+                
+                @keyframes opacity-alt2{
+                    0% {
+                        transform: scale(1);
+                    }
+                    50%{
+                        transform: scale(1.2);
+                    }
+                    100%{
+
+                        transform: scale(1);
+                    }
+                }
+                .active-num {
+                    
+                }
+                .active-animation {
+                    
+                }
+                
+                
+                
+                
+                
+            }
+            
+        }
+        
+        .lottery-buy-btn {
+           
+            margin: 0.26rem 0.26rem;
+            .serial-number {
+                text-align: center;
+            }
+            div{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                div {
+                    flex: 0 0 30%;
+                    color: #fff;
+                    background:linear-gradient(90deg,rgba(211,28,49,1) 0%,rgba(198,29,37,1) 100%);
+                    border-radius:0.4rem;
+                    font-size: 0.26rem;
+                    padding: 0.17rem 0;
+                    margin-right: 0.2rem;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: 0.35rem;
+                        margin-right: 0.14rem;
+                    }
+                }
+                div:nth-of-type(2) {
+                    background:linear-gradient(90deg,rgba(100,167,252,1) 0%,rgba(63,94,254,1) 100%);
+                }
+                div:nth-of-type(3) {
+                    margin-right: 0;
+                    background:linear-gradient(90deg,rgba(77,184,72,1) 0%,rgba(42,141,47,1) 100%);
+                }
+                .no-click {
+                    background: gray!important;
+                }
+            }
+            
+        }
+        .timeOut {
+            div {
+                background:gray!important;
+            }
+        }
+        
+        .lottery-select-list {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            padding: 0 0.26rem;
+            height: calc(100vh - 10.2rem);
+            overflow-y: scroll;
+            div {
+                flex: 0 0 14.2%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 0.17rem;
+                span {
+                    font-size: .36rem;
+                    color: #fff;
+                    font-weight: 600;
+                    border-radius: 100%;
+                    height: 0.76rem;
+                    width: 0.76rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.4s;
+                    background-repeat: no-repeat;
+                    background-size: 100% 100%;
+                    background-image: url('../../assets/images/qiu/jishuqiu.png');
+                    box-shadow: 0 3px 5px #999;
+                }
+                span:active {
+                    // background: rgba(243,143,143,0.4);
+                }
+                .borlhs {
+                    color: #8d8282;
+                }
+                .active-select {
+                    border: 1px solid #08F150;
+                    background: #08F150 !important;
+                    color: #000;
+                }
+                
+                .no-zero {
+                    color: #fff;
+                    background: gray;
+                }
+            }
+            div:nth-child(2n) {
+                span {
+                    background-image: url('../../assets/images/qiu/oushuqiu.png');
+                }
+            }
+            
+        }
+        
+        .lottery-buy-bottom {
+            background: #fff;
+            // box-shadow:0px 0px 5px 0px rgba(0,0,0,0.07);
+            border-radius:4px;
+            margin: 0 3.5%;
+            padding: 0.24rem 0.24rem;
+            position: fixed;
+            width: 93%;
+            height: 2rem;
+            bottom: 1.15rem;
+            // box-shadow: 0 0 0 #333;
+            border-bottom: 1px solid #f5f5f5;
+            // .van-switch {
+            //     position: absolute;
+            // }
+            .toggle-button-wrapper {
+                position: absolute;
+                top: .2rem;
+            }
+            #toggle-button {
+                display: none;
+              }
+            
+              .button-label {
+                position: relative;
+                display: inline-block;
+                width: 1.3rem;
+                height: .4rem;
+                
+                background-color: #dcdee0;
+                // box-shadow: #dcdee0 0px 0px 0px 2px;
+                border-radius: .25rem;
+                overflow: hidden;
+              }
+            
+              .circle {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: .4rem;
+                height: .4rem;
+                border-radius: 50%;
+                background-color: #fff;
+              }
+            
+              .button-label .text {
+                // line-height: 30px;
+                font-size: .2rem;
+                // text-shadow: 0 0 2px #ddd;
+                // position: absolute;
+                // top: 0.04rem;
+              }
+            
+              .on {
+                color: #fff;
+                display: none;
+                text-indent: .1rem;
+                // left: 0;
+              }
+            
+              .off {
+                color: #fff;
+                display: inline-block;
+                text-indent: .5rem;
+                // right: 0.1rem;
+              }
+            
+              .button-label .circle {
+                left: 0;
+                transition: all 0.3s;
+              }
+            
+              #toggle-button:checked+label.button-label .circle {
+                left: .9rem;
+              }
+            
+              #toggle-button:checked+label.button-label .on {
+                display: inline-block;
+              }
+            
+              #toggle-button:checked+label.button-label .off {
+                display: none;
+              }
+            
+              #toggle-button:checked+label.button-label {
+                background-color: #f50000;
+              }
+            .bottom-text {
+                text-align: right;
+                font-size: 0.24rem;
+                color: #969696;
+                .bottom-time {
+                    color: #000;
+                    font-weight: 600;
+                    font-size: 0.3rem;
+                    
+                       
+                }
+                 @keyframes opacity-alt3{
+                    0% {
+                       
+                       color: #07F949;
+                    }
+                    20% {
+                        color: #c61d25;
+                    }
+                    40% {
+                        color: #07F949;
+                    }
+                    60%{
+                        color: #c61d25;
+                    }
+                    80% {
+                        color: #07F949;
+                    }
+                    100%{
+
+                        color: #c61d25;
+                    }
+                }
+                
+                     .actSec {
+                        color: #c61d25;
+                        transition: all 0.2s;
+                         animation:opacity-alt3 4s infinite;
+
+                    }
+            }
+            .bottom-shopCart {
+                display: flex;
+                align-items: center;
+                margin-top: 0.15rem;
+                .shopCart-left {
+//                  display: flex;
+//                  flex: 1;
+                    flex: 3;
+                    text-align: right;
+//                  align-items: center;
+//                  padding: 0 0.2rem;
+                    .left-block {
+                        display: inline-block;
+                        div:nth-of-type(1) {
+                            color: #fff;
+                            background: #FD000B;
+                            text-align: center;
+                            font-size: 0.2rem;
+                            padding: 0 0.27rem;
+                            line-height: 0.42rem;
+                            border-top-left-radius: 4px;
+                            border-top-right-radius: 4px;
+                        }
+                        div:nth-of-type(2) {
+                            font-size: 0.24rem;
+                            color:#FD000B;
+                            text-align: center;
+                            padding: 0.15rem 0;
+                            border: 1px solid #A0A0A0;
+                            border-top: 0;
+                            border-bottom-left-radius: 4px;
+                            border-bottom-right-radius: 4px;
+                            background: #fff;
+                        }
+                    }
+                    .no-noId {
+                        div:nth-of-type(1) {
+                            background: gray;
+                        }
+                        div:nth-of-type(2) {
+                            color:gray;
+                        }
+                    }
+                    .activeBuy {
+                        // box-shadow: 0px 0px 10px red;
+                        animation:opacity-alt2 2.5s infinite;
+                    }
+
+
+                    @keyframes opacity-alt2{
+                        0% {
+       
+                            transform: scale(1);
+                        }
+                        50%{
+     
+                            transform: scale(1.1);
+                        }
+                        100%{
+    
+                            transform: scale(1);
+                        }
+                     }
+
+
+
+
+
+                }
+                .shopCart-right {
+                    // flex: 3;
+//                  text-align: right;
+                   
+                    .right-top {
+                        display: flex;
+                        align-items: center;
+                        .right-text {
+                            margin-right: 0.22rem;
+                        }
+                        .van-stepper {
+                            .van-stepper__minus, .van-stepper__plus {
+                                border: 1px solid #CECECE;
+                                background-color: #fff;
+                                border-radius: 2px;
+                                width: 0.4rem!important;
+                                height: 0.4rem!important;
+                            }
+                            .van-stepper__input {
+                                background-color: #fff;
+                                font-weight: 600!important;
+                                font-size: 0.26rem;
+                                color: #d0021b;
+                                width: 0.82rem!important;
+                            }
+                        }
+                        .van-stepper__minus::before, .van-stepper__plus::before {
+                            width: 8px;
+                        }
+                        .van-stepper__minus::after, .van-stepper__plus::after {
+                            height: 7px;
+                        }
+                    }
+                    .right-bottom {
+                        display: flex;
+                        align-items: flex-end;
+                        margin-top: 0.15rem;
+//                      .van-checkbox__icon--checked .van-icon {
+//                          border-color:#FD000B!important;
+//                          background-color: #FD000B!important;
+//                      }
+                        .right-bottom-block {
+                            display: flex;
+                            align-items: center;
+                            border: 1px solid #CECECE;
+                            padding: 0.03rem 0.1rem 0.03rem 0.16rem;
+                            font-size: 0.25rem;
+                            color: #888888;
+                            position: relative;
+                            width: 2.5rem;
+                            .iconico_arrowdown {
+                                position: absolute;
+                                right: 0.1rem;
+                            }
+                        }
+                        .activeChase {
+                            color: #000;
+                        }
+                        
+                        .reinvest {
+                            margin-left: 0.25rem;
+                            font-size: 0.26rem;
+                        }
+                        
+                        
+                    }
+                   
+
+                }
+            }
+        }
+        
+        
+        
+        
+        
+        .animation-num {
+                display: flex;
+                margin: 0.16rem 0;
+                justify-content: center;
+                position: fixed;
+                top: 2.2rem;
+                left: 0.5rem;
+                z-index: 11111111;
+                img {
+                    width: 100%;
+                    height: 1rem;
+                    transition: all 0.2s;
+                    animation:opacityImg 0.7s infinite;
+                    -moz-animation:opacityImg 1s infinite; /* Firefox */
+                    -webkit-animation:opacityImg 1s infinite; /* Safari and Chrome */
+                    -o-animation:opacityImg 1s infinite; /* Opera */
+                }
+        
+            }
+            
+   
+            @keyframes opacityImg{
+                    0% {
+                       width: 100%;
+                        opacity: 1;
+                    }
+                    50%{
+                       width: 60%;
+                       height: 0.6rem;
+                       opacity: 0.9;
+                    }
+                    100%{
+                        width: 10%;
+                        height: 0.2rem;
+                        opacity: 0.5;
+                    }
+                }
+                
+                
+                
+                //复投详情
+                .reinvestDetail-detail-popup {
+                    .reinvestDetail-title {
+                        text-align: center;
+                        padding: 0.35rem 0 0.54rem 0;
+                        font-size: 0.3rem;
+                    }
+                    .reinvest-list {
+                        height: 9rem; 
+                        padding: 0 0.5rem 0 0.3rem;
+                        position: relative;
+                        overflow: auto;
+                        .van-swipe-cell__wrapper {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-bottom: 0.3rem;
+                        }
+                        .reinvest-num {
+                            position: absolute;
+                            left: 5%;
+                            span {
+                                background: #35a2f2;
+                                color: #fff;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center; 
+                                font-size: 0.21rem;
+                                border-radius: 0.3rem;
+                                height: 0.4rem;
+                                width: 0.4rem;
+                            }
+                        }
+                        .reinvest-list-block-wrap {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            position: relative;
+                            
+                            .reinvest-list-block {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                width: 0.78rem;
+                                height: 0.78rem;
+                                border-radius: 100%;
+                                border:1px solid rgba(205,204,202,1);
+                                margin-right: 0.4rem;
+                               
+                            }
+                            .point {
+                                position: absolute;
+                                bottom: 0;
+                                left: 0.9rem;
+                                font-size: 0.4rem;
+                                font-weight: normal;
+                            }
+                        }
+                        .leave {
+                           animation: leave-alt 1s alternate forwards;
+                        }
+                        @keyframes leave-alt{
+                            0% {
+                                margin-top: 0;
+                                margin-left: 0;
+                                transform: translateX(0);
+                                
+                            }
+                            50%{
+
+                               
+                                
+                            }
+                            100%{
+                              
+                                margin-top: -100%;
+                                 transform: translateX(-150%);
+                            }
+                        }
+//                      .enter {
+//                           animation:enter-alt 1s 2s alternate forwards;
+//                      }
+//                      @keyframes enter-alt{
+//                          0% {
+//                              transform:translate3d(0,100%,0)
+//                          }
+//                          50%{
+//
+//                          }
+//                          100%{
+//                              transform:translate3d(0,0,0)
+//                          }
+//                      }
+                        .van-swipe-cell__right {
+                            font-size: 0.26rem;
+                            display: flex;
+                            align-items: center;
+//                          margin-top: 0.2rem;
+                            .iconshanchu {
+                                font-size: 0.34rem;
+                                color: red;
+                            }
+                        }
+                       
+                    }
+                }
+                
+                
+                
+                
+                //复投详情
+        
+        
+       
+        
+//      那加兰购彩引导
+        .guide-0 {
+            top: 30%;
+            p {
+                height: 1rem;
+            }
+    
+        }
+        
+        
+        .guide-1 {
+            top: 4rem;
+            p {
+                height: 0.5rem;
+            }
+            .iconxiangshang {
+                left: 33%;
+                top: -25%;
+            }
+            .guide-people {
+                right: 2%;
+                top: -81%;
+            }     
+        }
+        
+        .guide-2 {
+            top: 1.5rem;
+            p {
+                height: 1rem;
+            }
+            .iconxiangxia {
+                left: 12%;
+                bottom: -35%;
+            }
+            .guide-people {
+                right: 2%;
+                bottom: -81%;
+            }     
+        }
+        
+        .guide-3 {
+            bottom: 3.5rem;
+            p {
+                height: 1rem;
+            }
+            .iconxiangxia {
+                right: 9%;
+                bottom: -35%;
+            }
+            .guide-people {
+                right: 2%;
+                top: -81%;
+            }     
+        }
+        
+        
+        .guide-4 {
+            .iconxiangxia {
+                position: absolute;
+                font-size: 0.5rem;
+                color: #D51B31;
+                animation:opacity-alt1 1.4s infinite;
+                right: 21%;
+                bottom: 20%;
+            }
+          
+            .van-dialog__confirm, .van-dialog__confirm:active {
+              color: #D51B31!important;
+            }
+
+        }
+        
+        .guide-5 {
+            bottom: 1.8rem;
+            p {
+                height: 1rem;
+            }
+            .iconxiangxia {
+                right: 11%;
+                bottom: -35%;
+            }
+            .guide-people {
+                right: 2%;
+                top: -81%;
+            }     
+        }
+        //      那加兰购彩引导
+        
+        
+        
+        //比特币汇率购彩引导
+        .guide-6 {
+            top: 3.7rem;
+            p {
+                height: 1rem;
+            }
+            .iconxiangshang {
+                left: 22%;
+                top: -25%;
+            }
+            .guide-people {
+                right: 2%;
+                top: -81%;
+            }     
+        }
+        
+        .guide-7 {
+            top: 4.5rem;
+            p {
+                height: 2rem;
+            }
+            .iconxiangshang {
+                left: 11%;
+                top: -27%;
+            }
+            .guide-people {
+                right: 2%;
+                top: -81%;
+            }     
+        }
+        
+        .guide-8 {
+            top: 7rem;
+            p {
+               height: 2rem; 
+            }
+            
+            .iconxiangxia {
+                left: 11%;
+                bottom: -23%;
+            }
+            .guide-people {
+                right: 2%;
+                top: -66%;
+            }     
+        }
+        
+        .guide-9 {
+            bottom: 3.5rem;
+            p {
+                height: 1rem;
+            }
+            .iconxiangxia {
+                right: 11%;
+                bottom: -35%;
+            }
+            .guide-people {
+                right: 2%;
+                top: -81%;
+            }     
+        }
+        
+        .guide-10 {
+            .iconxiangxia {
+                position: absolute;
+                font-size: 0.5rem;
+                 color: #D51B31;
+                animation:opacity-alt1 1.4s infinite;
+                right: 21%;
+                bottom: 20%;
+            }   
+          
+            .van-dialog__confirm, .van-dialog__confirm:active {
+              color: #D51B31!important;
+            }  
+        }
+        
+        .guide-11 {
+            bottom: 1.8rem;
+            p {
+                height: 1rem;
+            }
+            .iconxiangxia {
+                right: 11%;
+                bottom: -35%;
+            }
+            .guide-people {
+                right: 2%;
+                top: -81%;
+            }     
+        }
+        
+        
+        
+        
+        
+        
+        
+        //比特币汇率购彩引导
+        
+        
+        
+        
+        
+        .guideActive {
+            z-index: 9999999;
+            color: #fff!important;
+            // box-shadow: 0px 0px 5px -1px #d5d5d5;
+        }
+        .guideActiveA {
+            z-index: 99999999!important;
+        }
+        .guideActiveB {
+            z-index: 9999999;
+            color: #fff!important;
+          
+        }
+        // .iconfont {
+        //     z-index: 9999999;
+        //     color: #fff!important;
+        //  }
+        
+        
+    }
+ 
+ 
+ 
+ //进度条加载
+.loading-wrap {
+    background: url('../../assets/images/loading_bg.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    .loading-logo {
+        text-align: center;
+        padding: 2rem 0 3rem 0; 
+        img {
+            width: 35%;
+        }
+    }
+    .loading-progress {
+        margin: 0 0.6rem;
+        .progress-block {
+            border-radius:8px;
+            border:1px solid rgba(247,247,247,1);
+            padding: 0.07rem 0.1rem;
+        }
+        .progress-text {
+            margin: 0.3rem 0.1rem;
+            span:nth-of-type(1) {
+                color: #FFFFFF;
+            }
+            span:nth-of-type(2) {
+                color: #ef3939;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+
+
+.downLoad-a {
+    position: absolute;
+}
+.rise2 {
+    color: #9FE95F;
+}
+.decline2 {
+    color: #F72316;
+}
+// 成功和失败弹窗
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    //  // 关闭按钮
+     .guanbi {
+        width: .48rem;
+        position: absolute; 
+        right: .4rem;
+        top: 28%;
+        z-index: 999;
+    }
+    .guanbi2 {
+        width: .48rem;
+        position: absolute; 
+        right: .4rem;
+        top: 24%;
+        z-index: 999;
+
+    }
+    .block {
+        width: 7.06rem;
+        padding-bottom: 1.2rem;
+        background-color: #fff;
+        border-radius: .1rem;
+        position: relative;
+         
+        // 分液器
+        .fenyebottom {
+            width: 100%;
+            height: 1.2rem;
+            position: absolute;
+            bottom: 0;
+            font-size: #fff;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            .van-pagination {
+                width: 50%;
+                margin: 0 auto;
+                // 箭头
+                .van-pagination__item {
+                    background: red;
+                    color: #fff;
+                    font-size: .4rem;
+                }
+                .van-pagination__item::after {
+                    border: none;
+                }
+                .van-pagination__page-desc {
+                    color: #fff;
+                    font-size: .38rem;
+                }
+            }
+           
+        }
+       
+        .popupContent {
+            padding: .24rem;
+            font-weight: 600;
+            .winning-time {
+                color: #6C7279;
+                font-size: .24rem;
+                height: .88rem;
+                line-height: .88rem;
+                text-align: center;
+                border-bottom: 1px dotted #e9eaeb;
+                
+            }
+            .winning-content {
+                padding: .56rem .1rem 1.6rem;
+                font-size: .3rem;
+                letter-spacing: .02rem;
+                line-height: 1.5;
+                color: #6C7279;
+            }
+            .cont-titl {
+                display: flex;
+                align-items: center;
+                font-size: .28rem;
+                span {
+                    position: absolute;
+                    color: #0094ff;
+                    text-decoration: underline;
+                }
+                h6 {
+                    margin: 0 auto;
+                    font-size: .30rem;
+                }
+            }
+            .results-tit {
+                width: 4.68rem;
+                height: 1.55rem;
+                margin: 0 auto;
+                text-align: center;
+                border: 1px solid #ffe5e6;
+                border-radius: .1rem;
+                padding-top: .26rem;
+                h6 {
+                    padding-bottom: .28rem;
+                    font-size: .26rem;
+                }
+            }
+            p {
+                color: #bc7279;
+                padding-left: .94rem;
+            }
+            .btc-INR {
+                font-size: .26rem;
+                height: .7rem;
+                line-height: .7rem;
+                letter-spacing: 0.02rem;
+            }
+            .endnum {
+                font-size: .22rem;
+                height: .6rem;
+                line-height: .6rem;
+            }
+            .houhou {
+                height: .3rem;
+                width: 100%;
+                border-bottom: 1px dotted #e9eaeb;
+            }
+            .zuidi {
+                p{
+                    height: .7rem;
+                    display: flex;
+                    align-items: center;
+                    color: #6c7279;
+                    font-size: .22rem;
+                }
+            }
+        }
+      }
+  }
+  .van-overlay {
+      z-index: 2000 !important;
+  }
+  .donghuamask {
+      z-index: 999999 !important;
+      background-color: rgba(0,0,0,0) !important;
+  }
+//   开奖详情
+  //开奖详情
+  .lottery-detail-popup {
+    width: 100%!important;
+    top: 1.1rem;
+}
+//      .van-overlay {
+//          top: 0.9rem;
+//      }
+.lottery-detail {
+    background: #fff;
+    width: 100%;
+    padding: 0.6rem 0.2rem;
+    
+    .iconguanbi {
+        position: absolute;
+        top: 0.05rem;
+        right: 0.05rem;
+        color: #B4B2B2;
+        font-size: 0.5rem;
+        padding: 0.2rem;
+    }
+    .lottery-detail-title {
+        text-align: center;
+        p:nth-of-type(1) {
+            color: #696969;
+            font-size: 0.4rem;
+        }
+        p:nth-of-type(2) {
+            font-size: 0.22rem;
+            margin: 0 0 0.1rem 0;
+            span:nth-of-type(1) {
+                color: #C1BCBC;
+            }
+            span:nth-of-type(2) {
+                color: #D0021B;
+            }
+        }
+        p:nth-of-type(3) {
+            color: #898989;
+            font-size: 0.26rem;
+        }
+    }
+    .lottery-detail-first {
+        background:rgba(208,2,27,1);
+        box-shadow:0px 0px 5px 0px rgba(0,0,0,0.07);
+        border-radius:0.1rem;
+        padding: 0.1rem 0.2rem;
+        margin: 0.15rem 0 0.25rem 0;
+        position: relative;
+        .odd-even-text {
+            position: absolute;
+            right: 0.3rem;
+            top: 0.5rem;
+            color: #F8E71C;
+        }
+        .first-wrap {
+            display: flex;
+            margin: 0.16rem 0;
+            div {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+            }
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 0.78rem;
+                height: 0.78rem;
+                border-radius: 100%;
+                color: #707070;
+                font-size: 0.36rem;
+                background: #fff;
+                border:1px solid rgba(205,204,202,1);
+            }
+            div:nth-of-type(2) {
+                span {
+                  color: #3EA63E;  
+                } 
+            }
+        }
+        .lottery-num-bse {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: .16rem 0;
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 0.78rem;
+                height: 0.78rem;
+                border-radius: 100%;
+                color: #707070;
+                font-size: 0.36rem;
+//                      margin-right: 0.15rem;
+                border:1px solid rgba(205,204,202,1);
+                background: #fff;
+                 margin-right: 0.2rem;
+            }
+            span:nth-of-type(1) {
+               
+            }
+            span:nth-of-type(4) {
+                color: #3EA63E;
+            }
+            b:nth-of-type(1) {
+                margin-top: 0.15rem;
+                margin-right: 0.04rem;
+                font-size: 0.4rem;
+                color: #fff;
+            }
+            b:nth-of-type(2) {
+                margin: 0 0.2rem 0 0;
+                font-size: 0.5rem;
+                color: #fff;
+                font-weight: normal;
+            }
+        }
+        .first-center {
+            display: flex;
+            align-items: center;
+            margin: 0.3rem 0 0.2rem 0;
+            div:nth-of-type(1) {
+                color: #F8E71C;
+                font-size: 0.26rem;
+            }
+            div:nth-of-type(2) {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+                align-content: center;
+                color:#fff;
+                font-size: 0.26rem;
+                .iconfont {
+                    margin-left: 0.05rem;
+                    transition: all 0.2s;
+                }
+            }
+        }
+        .first-bottom {
+            font-size: 0.26rem;
+            color: #fff;
+            padding: 0.1rem 0;
+            p {
+                padding: 0.05rem 0;
+            }
+            .amount {
+                color: #F8E71C;
+            }
+        }
+    }
+    
+    
+    .lottery-list {
+        max-height: 6rem;
+        overflow: auto;
+        .amount {
+            color: #D0021B;
+        }
+        .lottery-Consolation {
+            border-bottom: 1px dashed #EDEAED;
+            margin: 0.3rem 0;
+            .list-block-title {
+                font-size: 0.26rem;
+                color: #696969;
+                margin: 0 0.2rem;   
+            }
+            .Consolation-list {
+                display: flex;
+                justify-content: center;
+                margin: 0.3rem 0;
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 0.78rem;
+                    height: 0.78rem;
+                    border-radius: 100%;
+                    color: #707070;
+                    font-size: 0.36rem;
+                    margin-right: 0.15rem;
+                    background: #fff;
+                    border:1px solid rgba(205,204,202,1);
+                }
+            }
+        }
+        .no-border {
+            border-bottom: 0;
+        }
+        
+        .lottery-price-list {
+           border-bottom: 1px dashed #EDEAED;
+           margin: 0.3rem 0;
+            .list-block-title {
+                font-size: 0.26rem;
+                color: #696969;
+                margin: 0 0.2rem;                    }
+            .price-list {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0.3rem 0;
+
+                span {
+                    flex: 0 0 20%;
+                    text-align: center;
+
+                    color: #B7B7B7;
+                    font-size: 0.3rem;
+                    margin-bottom: 0.25rem;
+
+                }
+            } 
+        }
+    }
+    
+    
+    //指数
+    .bse-wrap {
+        padding: 0.15rem 0.2rem;
+        margin-bottom: 4rem;
+        .bse-title {
+            margin-bottom: 0.17rem;
+            display: flex;
+            align-items: center;
+            span:nth-of-type(1) {
+                color: #2344F8;
+//                      text-decoration: underline;
+                font-size: 0.26rem;     
+            }
+            span:nth-of-type(2) {
+                flex: 1;
+                text-align: right;
+                color: #999;
+                font-size: 0.26rem;
+            }
+        }
+        .current-bse {
+            display: flex;
+            align-items: center;
+            font-size: 0.26rem;
+            color: #999;
+            b {
+                color: #333;
+            }
+            div:nth-of-type(1) {
+                font-weight: bold;
+                color: #333;
+               span {
+                    margin-left: 0.2rem;
+                    font-weight: normal;
+                }
+            }
+            div:nth-of-type(2) {
+                flex: 1;
+                text-align: right;
+            }
+        }
+        .current-bse-btc {
+            .usd {
+                border-bottom: 1px solid #2344F8;
+                color: #2344F8;
+                font-size: 0.26rem;
+            }
+            p {
+                font-size: 0.26rem;
+            }
+            p:nth-of-type(1) {
+                margin: 0.1rem 0 0.1rem 0;
+            }
+        }
+        //指数上升
+        .rise {
+            color: #08F150!important;
+            .iconfont {
+                color: #08F150;
+                font-size: 0.28rem;
+            }
+        }
+        //指数下降
+        .decline {
+            color: #F72316!important;
+            .iconfont {
+                color: #F72316;
+                font-size: 0.28rem;
+            }
+        }
+        .day-bse {
+            margin: 0.15rem 0;
+            div {
+                display: flex;
+                margin-bottom: 0.17rem;
+                font-size: 0.26rem;
+                color: #999;
+                b {
+                    color: #333;
+                }
+                span:nth-of-type(2) {
+                    flex: 1;
+                    text-align: right;
+                }
+            }
+          
+        }
+
+    }
+    
+    
+    
+    
+    //按钮
+    .lottery-detail-btn {
+        display: flex;
+        margin: 0.3rem 0.2rem 0.5rem 0.2rem;
+        .detail-btn {
+            flex: 1;
+            text-align: center;
+            height: 0.8rem;
+            line-height: 0.8rem;
+            background: #D0021B;
+            color: #fff;
+            font-size: 0.26rem;
+            border-radius: 4px;
+        }
+        .detail-btn:nth-of-type(1) {
+            margin-right: 0.3rem;
+        }
+        .detail-btn:nth-of-type(2) {
+            background: #49B345;
+        }
+    }
+}
+.yingchang {
+    display: none !important;
+}
+// 没中奖弹窗颜色
+.setlast {
+    color: #9FE95F;
+}
+// 开关
+.shenjing {
+    width: 4rem;
+}
+.swicenter {
+    text-align: center !important;
+}
+.buy-nowadd {
+    width: 3rem;
+    height: 1.28rem;
+}
+.front {
+    color: #A6AAAE;
+    font-size: .28rem;
+}
+// btc倒计时
+.btc-time {
+    text-align: center;
+}
+.loading-zai {
+    top: -9rem;
+    z-index: 99;
+}
+.fly-out {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999999;
+}
+.arrow-left {
+    position: fixed;
+    
+    z-index: 99999999 !important;
+    font-size: .5rem !important;
+}
+
+    // 弹出层
+//  .move-enter-active,.move-leave-active {
+//     transition: all 0.5s linear;
+//     transform: translate3d(0, 0, 0);
+//     }
+//     .move-enter,.move-leave {
+//     transform: translate3d(100%, 0, 0);
+//     }
+.move-enter{
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  .move-leave-to{
+    opacity: 0;
+    transform: translateX(-100%);
+    // 解决页面从上往下位移问题
+    position: absolute;
+  }
+  .move-enter-active,.move-leave-active{
+    transition: all 0.5s ease;
+  }
+.aliancente {
+    text-align: center;
+    margin-bottom: .1rem;
+}
+// 追投
+.zhuitou {
+    .van-action-sheet__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+    .van-action-sheet__subname {
+        margin-top: 0 !important;
+        color: #f50000;
+    }
+}
